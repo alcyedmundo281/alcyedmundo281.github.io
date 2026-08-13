@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Powersemiotics — Herramientas clínicas para decidir con datos</title>
+<meta name="description" content="Powersemiotics diseña y publica herramientas para el médico que decide: un atlas de ultrasonido clínico, un motor de apoyo a la decisión auditable y una plataforma de educación médica.">
+<link rel="canonical" href="https://powersemiotics.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Powersemiotics — Herramientas clínicas para decidir con datos">
+<meta property="og:description" content="Atlas de ultrasonido, apoyo a la decisión clínica y educación médica. Estudio independiente, Quito, Ecuador.">
+<meta property="og:url" content="https://powersemiotics.com/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+<style>
+  :root{
+    --pantalla:#0D1013;      /* el monitor */
+    --fondo:#E7E8E4;         /* la sala */
+    --papel:#F8F8F6;
+    --tinta:#12161A;
+    --grafito:#585E63;
+    --linea:#CDCFC9;
+    --doppler-azul:#123F8F;
+    --azul-haz:#7FA8EE;
+    --doppler-rojo:#B03327;
+
+    --display:"Bricolage Grotesque",system-ui,sans-serif;
+    --texto:"Newsreader",Georgia,serif;
+    --dato:"IBM Plex Mono",ui-monospace,monospace;
+
+    --marco:clamp(20px,5vw,64px);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--fondo);color:var(--tinta);
+    font-family:var(--texto);font-size:clamp(17px,1.05vw + 14px,19px);
+    line-height:1.6;font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  img,canvas{display:block;max-width:100%}
+  ::selection{background:var(--azul-haz);color:var(--pantalla)}
+  :focus-visible{outline:2px solid var(--doppler-azul);outline-offset:3px;border-radius:2px}
+
+  .rotulo{
+    font-family:var(--dato);font-size:.7rem;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;
+  }
+  .envoltura{max-width:1220px;margin:0 auto;padding-inline:var(--marco)}
+
+  /* ---------- Monitor: cabecera + portada ---------- */
+  .monitor{
+    position:relative;background:var(--pantalla);color:#F1F2EF;
+    overflow:hidden;isolation:isolate;
+  }
+  #barrido{
+    position:absolute;inset:0;width:100%;height:100%;
+    z-index:0;opacity:.85;
+  }
+  .monitor::after{ /* legibilidad sobre el barrido */
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(100deg,var(--pantalla) 8%,rgba(13,16,19,.92) 34%,rgba(13,16,19,.45) 62%,rgba(13,16,19,.75) 100%);
+  }
+  .monitor > .envoltura{position:relative;z-index:2}
+
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:26px;flex-wrap:wrap}
+  .marca{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+  .marca b{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+  .marca span{color:var(--azul-haz)}
+  .nav ul{display:flex;gap:clamp(14px,2.4vw,30px);list-style:none;margin:0;padding:0}
+  .nav a{text-decoration:none;color:#C6CAD0}
+  .nav ul a{font-family:var(--dato);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+  .nav ul a:hover{color:#fff}
+
+  .portada{padding-block:clamp(56px,11vh,120px) clamp(64px,13vh,132px);max-width:44ch}
+  .portada .rotulo{color:var(--azul-haz);display:block;margin-bottom:22px}
+  .portada h1{
+    font-family:var(--display);font-weight:600;
+    font-size:clamp(2.5rem,6.4vw,4.6rem);line-height:1.02;letter-spacing:-.035em;
+    margin:0 0 26px;
+  }
+  .portada h1 em{font-style:normal;font-weight:400;color:var(--azul-haz)}
+  .portada p{margin:0 0 34px;color:#C8CCD1;max-width:38ch}
+  .acciones{display:flex;gap:14px;flex-wrap:wrap}
+  .boton{
+    display:inline-block;text-decoration:none;font-family:var(--dato);
+    font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:14px 24px;border:1px solid #33393F;transition:background .2s,color .2s,border-color .2s;
+  }
+  .boton.solido{background:var(--azul-haz);color:var(--pantalla);border-color:var(--azul-haz)}
+  .boton.solido:hover{background:#fff;border-color:#fff}
+  .boton:hover{border-color:#8A9199;color:#fff}
+
+  /* ---------- Cartera ---------- */
+  .seccion{padding-block:clamp(56px,9vw,104px)}
+  .titulo-seccion{display:flex;align-items:baseline;gap:18px;margin-bottom:44px;flex-wrap:wrap}
+  .titulo-seccion h2{
+    font-family:var(--display);font-weight:600;letter-spacing:-.025em;
+    font-size:clamp(1.6rem,3.2vw,2.3rem);margin:0;
+  }
+  .titulo-seccion .rotulo{color:var(--grafito)}
+
+  .cartera{display:grid;gap:clamp(18px,2.4vw,26px);grid-template-columns:repeat(3,1fr)}
+  @media (max-width:900px){.cartera{grid-template-columns:1fr}}
+
+  .ficha{
+    background:var(--papel);border:1px solid var(--linea);
+    padding:30px 28px 26px;display:flex;flex-direction:column;
+    transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+  }
+  .ficha:hover{transform:translateY(-3px);border-color:#B4B7B0;box-shadow:0 14px 34px -22px rgba(18,22,26,.55)}
+  .glifo{width:44px;height:44px;margin-bottom:22px;color:var(--doppler-azul)}
+  .ficha h3{font-family:var(--display);font-weight:600;font-size:1.5rem;letter-spacing:-.02em;margin:0 0 4px}
+  .ficha .clase{font-family:var(--dato);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--doppler-azul);margin-bottom:16px}
+  .ficha p{margin:0 0 24px;font-size:.97rem;color:#2B3136}
+  .ficha dl{
+    margin:0 0 24px;padding-top:16px;border-top:1px solid var(--linea);
+    font-family:var(--dato);font-size:.72rem;line-height:1.9;color:var(--grafito);
+  }
+  .ficha dl div{display:flex;justify-content:space-between;gap:12px}
+  .ficha dt{letter-spacing:.06em;text-transform:uppercase;opacity:.75}
+  .ficha dd{margin:0;text-align:right;color:var(--tinta)}
+  .ficha dd a{color:var(--doppler-azul)}
+  .ficha .entrada{
+    margin-top:auto;font-family:var(--dato);font-size:.76rem;letter-spacing:.09em;
+    text-transform:uppercase;text-decoration:none;color:var(--doppler-azul);
+    display:inline-flex;align-items:center;gap:9px;
+  }
+  .ficha .entrada:hover{text-decoration:underline;text-underline-offset:5px}
+  .ficha .entrada.pendiente{color:var(--grafito);pointer-events:none}
+  .ficha .entrada svg{width:15px;height:15px;transition:transform .2s}
+  .ficha .entrada:hover svg{transform:translateX(4px)}
+
+  /* ---------- Método ---------- */
+  .metodo{border-block:1px solid var(--linea);background:#EFF0EC}
+  .metodo .rejilla{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,80px);align-items:start}
+  @media (max-width:820px){.metodo .rejilla{grid-template-columns:1fr}}
+  .metodo h2{font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.25;letter-spacing:-.02em;margin:0}
+  .metodo h2 b{font-weight:600}
+  .principios{list-style:none;margin:0;padding:0;display:grid;gap:24px}
+  .principios h4{font-family:var(--dato);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--doppler-rojo);margin:0 0 6px}
+  .principios p{margin:0;font-size:.98rem;color:#2B3136}
+
+  /* ---------- Escritos ---------- */
+  .escritos{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea)}
+  @media (max-width:820px){.escritos{grid-template-columns:1fr}}
+  .escritos a{
+    background:var(--fondo);padding:22px 24px;text-decoration:none;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    font-size:.95rem;transition:background .2s;
+  }
+  .escritos a:hover{background:var(--papel)}
+  .escritos a span{font-family:var(--dato);font-size:.7rem;color:var(--grafito)}
+
+  /* ---------- Recepción / pie ---------- */
+  .recepcion{background:var(--pantalla);color:#E9EAE7}
+  .recepcion .rejilla{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(30px,6vw,70px);padding-block:clamp(56px,9vw,96px)}
+  @media (max-width:820px){.recepcion .rejilla{grid-template-columns:1fr}}
+  .recepcion h2{font-family:var(--display);font-weight:600;font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.03em;margin:0 0 18px;line-height:1.06}
+  .recepcion p{color:#A9AFB6;margin:0 0 28px;max-width:40ch}
+  .correo{
+    font-family:var(--display);font-size:clamp(1.05rem,2.4vw,1.5rem);font-weight:400;
+    color:var(--azul-haz);text-decoration:none;border-bottom:1px solid #2E353C;padding-bottom:6px;
+  }
+  .correo:hover{border-color:var(--azul-haz)}
+  .datos{font-family:var(--dato);font-size:.76rem;line-height:2.1;color:#8D949B}
+  .datos a{color:#C6CAD0;text-decoration:none}
+  .datos a:hover{color:#fff}
+  .datos strong{display:block;color:#E9EAE7;letter-spacing:.12em;text-transform:uppercase;font-size:.7rem;font-weight:500;margin-bottom:8px}
+  .pie{border-top:1px solid #22282E;padding-block:24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:var(--dato);font-size:.68rem;color:#767D84}
+  .aviso{max-width:62ch}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ MONITOR ══════════ -->
+<header class="monitor">
+  <canvas id="barrido" aria-hidden="true"></canvas>
+
+  <div class="envoltura">
+    <nav class="nav" aria-label="Principal">
+      <a class="marca" href="/"><b>power<span>semiotics</span></b></a>
+      <ul>
+        <li><a href="#cartera">Productos</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#biblioteca">Biblioteca</a></li>
+        <li><a href="#recepcion">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="portada">
+      <span class="rotulo">Estudio independiente · Quito, Ecuador</span>
+      <h1>La señal ya está ahí. Falta <em>leerla</em>.</h1>
+      <p>Construimos herramientas para el médico que decide con datos: ultrasonido a pie de cama, apoyo a la decisión auditable y formación clínica. Software abierto, evidencia verificable, procesamiento local.</p>
+      <div class="acciones">
+        <a class="boton solido" href="#cartera">Ver los productos</a>
+        <a class="boton" href="#recepcion">Hablar con nosotros</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ CARTERA ══════════ -->
+<main>
+<section class="seccion envoltura" id="cartera">
+  <div class="titulo-seccion">
+    <h2>Tres productos, una misma pregunta</h2>
+    <span class="rotulo">Cartera</span>
+  </div>
+
+  <div class="cartera">
+
+    <!-- 1 · biosemiotics -->
+    <article class="ficha">
+      <svg class="glifo" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <path d="M22 4 L6 38 A34 34 0 0 0 38 38 Z" stroke-linejoin="round"/>
+        <path d="M22 4 L13.5 22" opacity=".45"/>
+        <path d="M22 4 L30.5 22" opacity=".45"/>
+        <path d="M11.5 27 A22 22 0 0 0 32.5 27" opacity=".55"/>
+        <path d="M16 15.5 A11 11 0 0 0 28 15.5" opacity=".55"/>
+      </svg>
+      <h3>biosemiotics</h3>
+      <div class="clase">Atlas de ultrasonido clínico</div>
+      <p>Un caso, un signo, una decisión — cada semana. Ecografía para el médico de primer contacto, con los límites de cada signo escritos junto al signo.</p>
+      <dl>
+        <div><dt>Dominio</dt><dd>biosemiotics.net</dd></div>
+        <div><dt>DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.21435362">10.5281/zenodo.21435362</a></dd></div>
+        <div><dt>Estado</dt><dd>En publicación</dd></div>
+      </dl>
+      <a class="entrada" href="https://www.biosemiotics.net/">Entrar al atlas
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+    </article>
+
+    <!-- 2 · HolonMed -->
+    <article class="ficha">
+      <svg class="glifo" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <circle cx="22" cy="8" r="3.4"/>
+        <circle cx="9" cy="24" r="3.4"/><circle cx="22" cy="24" r="3.4"/><circle cx="35" cy="24" r="3.4"/>
+        <circle cx="22" cy="38" r="3.4"/>
+        <path d="M20 10.8 11.2 21M22 11.4v9.2M24 10.8 32.8 21" opacity=".6"/>
+        <path d="M11.2 27 20 35.6M22 27.4v7.2M32.8 27 24 35.6" opacity=".6"/>
+      </svg>
+      <h3>HolonMed</h3>
+      <div class="clase">Apoyo a la decisión clínica</div>
+      <p>Convierte la narrativa clínica en hallazgos validados contra un vocabulario controlado y calcula la probabilidad dejando la traza a la vista. Nada sale de la máquina.</p>
+      <dl>
+        <div><dt>Código</dt><dd>Abierto · AGPL-3.0</dd></div>
+        <div><dt>DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.21881233">10.5281/zenodo.21881233</a></dd></div>
+        <div><dt>Estado</dt><dd>v0.2.0</dd></div>
+      </dl>
+      <a class="entrada" href="https://github.com/alcyedmundo281/holonmed">Ver el repositorio
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+    </article>
+
+    <!-- 3 · medsemiotics -->
+    <article class="ficha">
+      <svg class="glifo" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+        <rect x="5" y="9" width="34" height="26" rx="2"/>
+        <path d="M5 15h34" opacity=".6"/>
+        <path d="M11 22h9M11 27h6" opacity=".7"/>
+        <path d="M25 28.5l3.5-6 3 4 2-2.5" opacity=".85"/>
+      </svg>
+      <h3>medsemiotics</h3>
+      <div class="clase">Plataforma de educación médica</div>
+      <p>La obra escrita de Powersemiotics, reunida como plataforma de formación: medicina y datos, farmacoterapia, implementación, y las áreas clínicas. Repositorio propio y DOI propio.</p>
+      <dl>
+        <div><dt>Ruta</dt><dd>powersemiotics.com/<wbr>medsemiotics</dd></div>
+        <div><dt>DOI</dt><dd>Zenodo · en trámite</dd></div>
+        <div><dt>Estado</dt><dd>En migración</dd></div>
+      </dl>
+      <a class="entrada" href="#biblioteca">Ver la biblioteca
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══════════ MÉTODO ══════════ -->
+<section class="metodo" id="metodo">
+  <div class="envoltura seccion">
+    <div class="rejilla">
+      <h2>Un dato no es una decisión. <b>Entre los dos hay un signo, y ese signo se puede auditar.</b></h2>
+      <ul class="principios">
+        <li>
+          <h4>La cifra se verifica</h4>
+          <p>Cada número clínico que publicamos se contrasta con la fuente primaria antes de salir. Si no aguanta la revisión, no se publica.</p>
+        </li>
+        <li>
+          <h4>El límite va junto al signo</h4>
+          <p>Todo hallazgo lleva escrito dónde deja de ser fiable. Una herramienta que solo dice cuándo acierta no se puede usar con un paciente delante.</p>
+        </li>
+        <li>
+          <h4>El descarte se muestra</h4>
+          <p>Lo que el sistema rechaza aparece en pantalla con el motivo. Un proceso que esconde lo que descarta no es auditable.</p>
+        </li>
+        <li>
+          <h4>Los datos no viajan</h4>
+          <p>El procesamiento clínico ocurre en local. Ninguna narrativa de paciente se envía a terceros.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ESCRITOS ══════════ -->
+<section class="seccion envoltura" id="biblioteca">
+  <div class="titulo-seccion">
+    <h2>Biblioteca de medsemiotics</h2>
+    <span class="rotulo">Seis áreas · en migración</span>
+  </div>
+  <p style="max-width:56ch;margin:-24px 0 34px;color:#3A4045">Estas áreas son el cuerpo de medsemiotics. Mientras se completa la mudanza al repositorio propio, los enlaces siguen apuntando a sus direcciones actuales.</p>
+  <nav class="escritos" aria-label="Áreas de medsemiotics">
+    <a href="/medicina_y_datos.html">Medicina y datos <span>→</span></a>
+    <a href="/farmacoterapia_racional.html">Farmacoterapia racional <span>→</span></a>
+    <a href="/medicina_e_implementacion.html">Medicina e implementación <span>→</span></a>
+    <a href="/gastroenterologia.html">Gastroenterología <span>→</span></a>
+    <a href="/neurologia.html">Neurología <span>→</span></a>
+    <a href="/inmunologia_clinica.html">Inmunología clínica <span>→</span></a>
+  </nav>
+</section>
+</main>
+
+<!-- ══════════ RECEPCIÓN ══════════ -->
+<footer class="recepcion" id="recepcion">
+  <div class="envoltura">
+    <div class="rejilla">
+      <div>
+        <h2>La puerta está abierta</h2>
+        <p>Colaboraciones editoriales, implementación en su servicio, talleres de ultrasonido o una pregunta sobre el código: escriba y contestamos.</p>
+        <a class="correo" href="mailto:alcy.torres@powersemiotics.com">alcy.torres@powersemiotics.com</a>
+      </div>
+      <div class="datos">
+        <strong>Dirección</strong>
+        Alcy Edmundo Torres Guerrero<br>
+        Medicina interna · Quito, Ecuador<br>
+        <a href="https://orcid.org/0000-0002-9742-375X">ORCID 0000-0002-9742-375X</a><br>
+        <a href="https://github.com/alcyedmundo281">github.com/alcyedmundo281</a>
+      </div>
+    </div>
+    <div class="pie">
+      <span class="aviso">HolonMed no es un dispositivo médico. Ninguna salida de estos sistemas sustituye el juicio de un profesional sanitario.</span>
+      <span>© 2026 Powersemiotics</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const lienzo = document.getElementById('barrido');
+  if(!lienzo) return;
+  const ctx = lienzo.getContext('2d');
+  const quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let W=0, H=0, dpr=1, moteado=null, origen={x:0,y:0}, radio=0;
+  const APERTURA = 0.62;          // media apertura del sector, en radianes
+  const LAMINAS  = 34;            // láminas angulares del sector
+  const CICLO    = 5200;          // ms de un barrido completo de ida
+
+  function moteadoAcustico(){
+    // Textura de speckle: ruido granular con atenuación en profundidad.
+    const off = document.createElement('canvas');
+    off.width = W; off.height = H;
+    const o = off.getContext('2d');
+    const img = o.createImageData(W,H);
+    const d = img.data;
+    for(let y=0;y<H;y++){
+      const prof = y/H;
+      const atenua = Math.pow(1-prof,0.75);
+      for(let x=0;x<W;x++){
+        const i = (y*W+x)*4;
+        const grano = Math.random();
+        // bandas tisulares suaves para que no sea ruido plano
+        const banda = 0.35 + 0.45*Math.abs(Math.sin(prof*7.5 + Math.sin(x/W*3.1)*1.4));
+        let v = 255 * Math.pow(grano,2.1) * banda * atenua;
+        if(grano>0.985) v = Math.min(255, v+150);   // reflectores brillantes
+        d[i]=d[i+1]=d[i+2]= v;
+        d[i+3]=255;
+      }
+    }
+    o.putImageData(img,0,0);
+    return off;
+  }
+
+  function medir(){
+    dpr = Math.min(window.devicePixelRatio||1, 2);
+    W = lienzo.clientWidth; H = lienzo.clientHeight;
+    if(W===0||H===0) return;
+    lienzo.width = W*dpr; lienzo.height = H*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    origen = { x: W*0.66, y: -H*0.10 };
+    radio  = Math.hypot(W, H) * 1.15;
+    moteado = moteadoAcustico();
+  }
+
+  function lamina(a1,a2,alfa){
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(origen.x, origen.y);
+    ctx.arc(origen.x, origen.y, radio, a1, a2);
+    ctx.closePath();
+    ctx.clip();
+    ctx.globalAlpha = alfa;
+    ctx.drawImage(moteado, 0, 0, W, H);
+    ctx.restore();
+  }
+
+  function pintar(t){
+    if(!moteado){ requestAnimationFrame(pintar); return; }
+    ctx.clearRect(0,0,W,H);
+
+    const base = Math.PI/2;                       // hacia abajo
+    const fase = quieto ? 0.25 : (1 - Math.cos(t/CICLO * Math.PI*2))/2;  // vaivén suave
+    const haz  = base - APERTURA + fase*APERTURA*2;
+
+    // sector completo, tenue
+    lamina(base-APERTURA, base+APERTURA, 0.16);
+
+    // estela alrededor del haz
+    const paso = (APERTURA*2)/LAMINAS;
+    for(let k=-6;k<=6;k++){
+      const a = haz + k*paso;
+      if(a < base-APERTURA || a > base+APERTURA) continue;
+      const caida = Math.exp(-(k*k)/7);
+      lamina(a, a+paso, 0.13*caida);
+    }
+
+    // línea del haz
+    ctx.save();
+    ctx.globalAlpha = quieto ? 0.28 : 0.42;
+    const grad = ctx.createLinearGradient(origen.x, origen.y,
+                  origen.x + Math.cos(haz)*radio, origen.y + Math.sin(haz)*radio);
+    grad.addColorStop(0,'rgba(127,168,238,0.9)');
+    grad.addColorStop(0.55,'rgba(127,168,238,0.35)');
+    grad.addColorStop(1,'rgba(127,168,238,0)');
+    ctx.strokeStyle = grad; ctx.lineWidth = 1.4;
+    ctx.beginPath();
+    ctx.moveTo(origen.x, origen.y);
+    ctx.lineTo(origen.x + Math.cos(haz)*radio, origen.y + Math.sin(haz)*radio);
+    ctx.stroke();
+    ctx.restore();
+
+    if(!quieto) requestAnimationFrame(pintar);
+  }
+
+  let temporizador;
+  window.addEventListener('resize', ()=>{
+    clearTimeout(temporizador);
+    temporizador = setTimeout(()=>{ medir(); if(quieto) pintar(0); }, 180);
+  });
+
+  medir();
+  requestAnimationFrame(pintar);
+})();
+</script>
+</body>
+</html>

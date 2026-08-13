@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Sin señal — Powersemiotics</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
+
+<!--
+  GitHub Pages sirve este archivo ante cualquier ruta inexistente del ápice.
+  Todo el contenido escrito se mudó a /medsemiotics/ conservando su ruta, así que
+  una sola regla de prefijo cubre las 121 URLs antiguas. El script va en el <head>
+  para redirigir antes de pintar nada.
+-->
+<script>
+(function(){
+  var path = location.pathname.replace(/^\/+/, '');
+  var rest = location.search + location.hash;
+
+  // Directorios de sección: todo lo que cuelga de ellos migró tal cual.
+  var DIRS = [
+    'neurologia/',
+    'gastroenterologia/',
+    'farmacoterapia_racional/',
+    'medicina_y_datos/',
+    'medicina_e_implementacion/',
+    'inmunologia/',
+    'assets/pdf/'
+  ];
+
+  // Páginas sueltas del antiguo directorio raíz.
+  var FILES = [
+    'neurologia.html',
+    'gastroenterologia.html',
+    'farmacoterapia_racional.html',
+    'medicina_y_datos.html',
+    'medicina_e_implementacion.html',
+    'inmunologia_clinica.html',
+    'gastroenterologia-autoevaluacion.html',
+    'neurologia-autoevaluacion.html',
+    'medicamentos_cronicos.html',
+    'medicamentos_oncologicos.html',
+    'trastornos-movimiento-1.html'
+  ];
+
+  // El PDF de guiones bajos se consolidó en la variante con guiones.
+  var RENAMED = {
+    'assets/pdf/Razonamiento_Clinico_Modelos_y_Aplicaciones.pdf':
+      'assets/pdf/Razonamiento-Clinico-Modelos-y-Aplicaciones.pdf'
+  };
+
+  // La portada, su verificación de Search Console y los recursos propios del
+  // sitio corporativo nunca se redirigen.
+  if(path === '' || path === 'index.html' || path === '404.html') return;
+  if(path.indexOf('googledb9dc851be57aff6') === 0) return;
+  if(path.indexOf('assets/fonts/') === 0) return;
+  if(path.indexOf('assets/images/') === 0) return;
+
+  function go(target){ location.replace('/medsemiotics/' + target + rest); }
+
+  if(RENAMED[path]) return go(RENAMED[path]);
+  for(var i=0;i<DIRS.length;i++){ if(path.indexOf(DIRS[i]) === 0) return go(path); }
+  for(var j=0;j<FILES.length;j++){
+    // Cubre tanto /neurologia.html como el /neurologia sin extensión.
+    if(path === FILES[j] || path + '.html' === FILES[j]) return go(FILES[j]);
+  }
+})();
+</script>
+
+<style>
+  :root{
+    --pantalla:#0D1013;
+    --fondo:#E7E8E4;
+    --papel:#F8F8F6;
+    --tinta:#12161A;
+    --grafito:#585E63;
+    --linea:#CDCFC9;
+    --doppler-azul:#123F8F;
+    --azul-haz:#7FA8EE;
+    --doppler-rojo:#B03327;
+
+    --display:"Bricolage Grotesque",system-ui,sans-serif;
+    --texto:"Newsreader",Georgia,serif;
+    --dato:"IBM Plex Mono",ui-monospace,monospace;
+
+    --marco:clamp(20px,5vw,64px);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;min-height:100vh;display:flex;flex-direction:column;
+    background:var(--fondo);color:var(--tinta);
+    font-family:var(--texto);font-size:clamp(17px,1.05vw + 14px,19px);
+    line-height:1.6;font-weight:300;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  ::selection{background:var(--azul-haz);color:var(--pantalla)}
+  :focus-visible{outline:2px solid var(--doppler-azul);outline-offset:3px}
+
+  .rotulo{
+    font-family:var(--dato);font-size:.7rem;font-weight:500;
+    letter-spacing:.16em;text-transform:uppercase;
+  }
+  .envoltura{max-width:1220px;margin:0 auto;padding-inline:var(--marco);width:100%}
+
+  /* Cabecera sobria, sin el barrido: aquí no hay señal que mostrar. */
+  .monitor{background:var(--pantalla);color:#F1F2EF}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:26px;flex-wrap:wrap}
+  .marca{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+  .marca b{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+  .marca span{color:var(--azul-haz)}
+  .nav ul{display:flex;gap:clamp(14px,2.4vw,30px);list-style:none;margin:0;padding:0}
+  .nav a{text-decoration:none;color:#C6CAD0}
+  .nav ul a{font-family:var(--dato);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+  .nav ul a:hover{color:#fff}
+
+  main{flex:1;display:flex;align-items:center;padding-block:clamp(56px,12vh,120px)}
+  .aviso-404{max-width:46ch}
+  .aviso-404 .rotulo{color:var(--doppler-rojo);display:block;margin-bottom:22px}
+  .aviso-404 h1{
+    font-family:var(--display);font-weight:600;
+    font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.04;letter-spacing:-.035em;
+    margin:0 0 24px;
+  }
+  .aviso-404 h1 em{font-style:normal;font-weight:400;color:var(--doppler-azul)}
+  .aviso-404 p{margin:0 0 22px;color:#2B3136}
+  .ruta{
+    font-family:var(--dato);font-size:.8rem;font-weight:400;
+    background:var(--papel);border:1px solid var(--linea);
+    padding:.2em .5em;word-break:break-all;
+  }
+
+  .acciones{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+  .boton{
+    display:inline-block;text-decoration:none;font-family:var(--dato);
+    font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;
+    padding:14px 24px;border:1px solid var(--linea);background:var(--papel);
+    transition:background .2s,color .2s,border-color .2s;
+  }
+  .boton.solido{background:var(--doppler-azul);color:var(--papel);border-color:var(--doppler-azul)}
+  .boton.solido:hover{background:var(--tinta);border-color:var(--tinta)}
+  .boton:hover{border-color:var(--grafito)}
+
+  .pie{
+    border-top:1px solid var(--linea);padding-block:24px;
+    display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    font-family:var(--dato);font-size:.68rem;color:var(--grafito);
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<header class="monitor">
+  <div class="envoltura">
+    <nav class="nav">
+      <a class="marca" href="/"><b>Powersemiotics<span>.</span></b></a>
+      <ul>
+        <li><a href="/">Portada</a></li>
+        <li><a href="/medsemiotics/">Biblioteca</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="envoltura">
+    <div class="aviso-404">
+      <span class="rotulo">Error 404 · sin señal</span>
+      <h1>Aquí no hay <em>nada que leer</em>.</h1>
+      <p>
+        La dirección <span class="ruta" id="ruta">solicitada</span> no corresponde
+        a ningún documento de este sitio. Puede que el enlace esté mal escrito o
+        que apunte a algo que ya no existe.
+      </p>
+      <p>
+        Los módulos, cursos y materiales de estudio viven en la biblioteca, bajo
+        <span class="ruta">/medsemiotics/</span>.
+      </p>
+      <div class="acciones">
+        <a class="boton solido" href="/medsemiotics/">Abrir la biblioteca</a>
+        <a class="boton" href="/">Volver a la portada</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="envoltura">
+    <div class="pie">
+      <span>Powersemiotics · Quito, Ecuador</span>
+      <span>alcy.torres@powersemiotics.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('ruta').textContent = location.pathname;
+</script>
+
+</body>
+</html>
