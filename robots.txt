@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# El contenido escrito vive en el repositorio medsemiotics, publicado bajo
+# /medsemiotics/. Cada sitio declara su propio sitemap.
+Sitemap: https://powersemiotics.com/sitemap.xml
+Sitemap: https://powersemiotics.com/medsemiotics/sitemap.xml
