@@ -162,6 +162,19 @@
   .escritos a:hover{background:var(--papel)}
   .escritos a span{font-family:var(--dato);font-size:.7rem;color:var(--grafito)}
 
+  .libro-cta{
+    background:var(--pantalla);color:#F1F2EF;border:1px solid var(--linea);
+    padding:clamp(28px,4vw,44px) clamp(26px,4vw,42px);margin-bottom:36px;
+    display:flex;flex-direction:column;align-items:flex-start;gap:14px;
+  }
+  .libro-cta .rotulo{color:var(--azul-haz)}
+  .libro-cta h3{
+    font-family:var(--display);font-weight:600;letter-spacing:-.025em;
+    font-size:clamp(1.6rem,3.2vw,2.2rem);margin:0;color:#F1F2EF;
+  }
+  .libro-cta p{margin:0;color:#C8CCD1;max-width:52ch}
+  .libro-cta .boton.solido span{margin-left:8px}
+
   /* ---------- Recepción / pie ---------- */
   .recepcion{background:var(--pantalla);color:#E9EAE7}
   .recepcion .rejilla{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(30px,6vw,70px);padding-block:clamp(56px,9vw,96px)}
@@ -322,9 +335,11 @@
     <h2>Biblioteca de medsemiotics</h2>
     <span class="rotulo">Seis áreas · powersemiotics.com/medsemiotics</span>
   </div>
-  <p style="max-width:56ch;margin:-24px 0 34px;color:#3A4045">Seis áreas, cada una con sus módulos, casos y material de estudio. Son el cuerpo de medsemiotics.</p>
-  <div class="acciones" style="margin:-14px 0 34px">
-    <a class="boton solido" href="/medsemiotics/blog.html">Medsemiotics</a>
+  <div class="libro-cta">
+    <span class="rotulo">El libro · en crecimiento</span>
+    <h3>Medsemiotics</h3>
+    <p>Seis áreas hoy, cada una con sus módulos, casos y material de estudio — y el cuerpo crece con cada oleada nueva.</p>
+    <a class="boton solido" href="/medsemiotics/blog.html">Leer Medsemiotics <span aria-hidden="true">→</span></a>
   </div>
   <nav class="escritos" aria-label="Áreas de medsemiotics">
     <a href="/medsemiotics/medicina_y_datos.html">Medicina y datos <span>→</span></a>
