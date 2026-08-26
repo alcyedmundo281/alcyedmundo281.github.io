@@ -1,0 +1,663 @@
+{
+ "generado": "2026-08-26T00:32:41+00:00",
+ "repositorio": "https://github.com/alcyedmundo281/farmacosemiotics",
+ "base": "https://powersemiotics.com/farmacosemiotics/",
+ "licencia": "https://creativecommons.org/licenses/by-sa/4.0/",
+ "aviso": "Material educativo. No sustituye el juicio clínico ni la ficha técnica aprobada por la agencia reguladora del lugar de uso.",
+ "total": 16,
+ "facetas": {
+  "tipo": [
+   "farmaco",
+   "ficha"
+  ],
+  "clase": [
+   "Antagonista de los canales de calcio dihidropiridínico",
+   "Anticuerpo monoclonal anti-PD-1",
+   "Biguanida",
+   "Inhibidor de la enzima convertidora de angiotensina (IECA)",
+   "Inhibidor de la tirosina quinasa de Bruton (BTK)",
+   "Inhibidor del cotransportador sodio-glucosa tipo 2 (iSGLT2)",
+   "Inhibidor directo del factor Xa",
+   "Inhibidor selectivo de la interleucina-23 (anti-IL-23p19)"
+  ],
+  "lme_seccion": [
+   "12.3",
+   "18.5.2",
+   "8.2"
+  ],
+  "lme_categoria": [
+   "complementary",
+   "core"
+  ],
+  "certeza_global": [
+   "alta",
+   "moderada"
+  ],
+  "recomendacion_fuerza": [
+   "condicional",
+   "fuerte"
+  ],
+  "disenos": [
+   "eca",
+   "revision_sistematica"
+  ],
+  "estado": [
+   "revisado"
+  ]
+ },
+ "registros": [
+  {
+   "id": "FS:0001",
+   "tipo": "farmaco",
+   "titulo": "Metformina",
+   "titulo_en": "Metformin",
+   "url": "farmacos/FS0001-metformina.html",
+   "atc": "A10BA02",
+   "clase": "Biguanida",
+   "sinonimos": [
+    "dimetilbiguanida",
+    "clorhidrato de metformina",
+    "metformin hydrochloride"
+   ],
+   "lme": true,
+   "lme_seccion": "18.5.2",
+   "lme_categoria": "core",
+   "emlc": true,
+   "vias": [
+    "oral"
+   ],
+   "n_alertas": 1,
+   "n_reacciones": 3,
+   "agencias": [
+    "FDA"
+   ],
+   "fichas": [
+    "FT:0001"
+   ],
+   "resumen": "Reduce la producción hepática de glucosa, disminuye su absorción intestinal y mejora la sensibilidad a la insulina aumentando la captación y utilización periférica. No estimula la secreción de insulina: la insulinemia basal no sube y la respuesta a lo largo del día puede incluso descender. De ahí que no provoque hipoglucemia en monoterapia, que es su rasgo clínico distintivo."
+  },
+  {
+   "id": "FS:0002",
+   "tipo": "farmaco",
+   "titulo": "Apixabán",
+   "titulo_en": "Apixaban",
+   "url": "farmacos/FS0002-apixaban.html",
+   "atc": "B01AF02",
+   "clase": "Inhibidor directo del factor Xa",
+   "sinonimos": [
+    "Eliquis",
+    "BMS-562247-01"
+   ],
+   "lme": false,
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 2,
+   "fichas": [
+    "FT:0002"
+   ],
+   "resumen": "Inhibidor reversible, potente y altamente selectivo del factor Xa libre y ligado al coágulo. No requiere antitrombina III para su acción anticoagulante. Inhibe la conversión de protrombina a trombina, previniendo la formación del trombo."
+  },
+  {
+   "id": "FS:0003",
+   "tipo": "farmaco",
+   "titulo": "Pembrolizumab",
+   "titulo_en": "Pembrolizumab",
+   "url": "farmacos/FS0003-pembrolizumab.html",
+   "atc": "L01FF02",
+   "clase": "Anticuerpo monoclonal anti-PD-1",
+   "sinonimos": [
+    "Keytruda",
+    "MK-3475"
+   ],
+   "lme": true,
+   "lme_seccion": "8.2",
+   "lme_categoria": "complementary",
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 1,
+   "fichas": [
+    "FT:0003"
+   ],
+   "resumen": "Anticuerpo monoclonal humanizado IgG4 que se une al receptor PD-1 y bloquea su interacción con PD-L1 y PD-L2, reactivando la respuesta inmune celular mediada por linfocitos T contra las células tumorales."
+  },
+  {
+   "id": "FS:0004",
+   "tipo": "farmaco",
+   "titulo": "Guselkumab",
+   "titulo_en": "Guselkumab",
+   "url": "farmacos/FS0004-guselkumab.html",
+   "atc": "L04AC16",
+   "clase": "Inhibidor selectivo de la interleucina-23 (anti-IL-23p19)",
+   "sinonimos": [
+    "Tremfya",
+    "CNTO-1959"
+   ],
+   "lme": false,
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 1,
+   "fichas": [
+    "FT:0004"
+   ],
+   "resumen": "Anticuerpo monoclonal humano IgG1 que bloquea selectivamente la subunidad p19 de la IL-23, inhibiendo la diferenciación y mantenimiento de los linfocitos Th17 y la producción de citoquinas inflamatorias (IL-17A, IL-17F, IL-22)."
+  },
+  {
+   "id": "FS:0005",
+   "tipo": "farmaco",
+   "titulo": "Ibrutinib",
+   "titulo_en": "Ibrutinib",
+   "url": "farmacos/FS0005-ibrutinib.html",
+   "atc": "L01EL01",
+   "clase": "Inhibidor de la tirosina quinasa de Bruton (BTK)",
+   "sinonimos": [
+    "Imbruvica",
+    "PCI-32765"
+   ],
+   "lme": true,
+   "lme_seccion": "8.2",
+   "lme_categoria": "complementary",
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 2,
+   "fichas": [
+    "FT:0005"
+   ],
+   "resumen": "Inhibidor irreversible de molécula pequeña de la tirosina quinasa de Bruton (BTK), que bloquea la señalización intracelular del receptor de células B (BCR), frenando la proliferación y supervivencia de las células B clonales en neoplasias linfoides."
+  },
+  {
+   "id": "FS:0006",
+   "tipo": "farmaco",
+   "titulo": "Enalapril",
+   "titulo_en": "Enalapril",
+   "url": "farmacos/FS0006-enalapril.html",
+   "atc": "C09AA02",
+   "clase": "Inhibidor de la enzima convertidora de angiotensina (IECA)",
+   "sinonimos": [
+    "Renitec",
+    "Vasotec"
+   ],
+   "lme": true,
+   "lme_seccion": "12.3",
+   "lme_categoria": "core",
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 3,
+   "fichas": [
+    "FT:0006"
+   ],
+   "resumen": "Profármaco que tras bioactivación hepática a enalaprilat inhibe competitivamente la enzima convertidora de angiotensina, disminuyendo la síntesis de angiotensina II y aldosterona, reduciendo la poscarga y el remodelado miocárdico adverso."
+  },
+  {
+   "id": "FS:0007",
+   "tipo": "farmaco",
+   "titulo": "Empagliflozina",
+   "titulo_en": "Empagliflozin",
+   "url": "farmacos/FS0007-empagliflozina.html",
+   "atc": "A10BK03",
+   "clase": "Inhibidor del cotransportador sodio-glucosa tipo 2 (iSGLT2)",
+   "sinonimos": [
+    "Jardiance",
+    "BI-10773"
+   ],
+   "lme": true,
+   "lme_seccion": "18.5.2",
+   "lme_categoria": "core",
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 3,
+   "fichas": [
+    "FT:0007"
+   ],
+   "resumen": "Inhibidor selectivo y reversible del cotransportador SGLT2 en el túbulo proximal renal, que induce glucosuria y natriuresis, reduce la presión intraglomerular, disminuye la precarga y poscarga ventricular y optimiza la eficiencia energética miocárdica."
+  },
+  {
+   "id": "FS:0008",
+   "tipo": "farmaco",
+   "titulo": "Amlodipino",
+   "titulo_en": "Amlodipine",
+   "url": "farmacos/FS0008-amlodipino.html",
+   "atc": "C08CA01",
+   "clase": "Antagonista de los canales de calcio dihidropiridínico",
+   "sinonimos": [
+    "Norvasc",
+    "Amlodipine besylate"
+   ],
+   "lme": true,
+   "lme_seccion": "12.3",
+   "lme_categoria": "core",
+   "emlc": false,
+   "n_alertas": 0,
+   "n_reacciones": 3,
+   "fichas": [
+    "FT:0008"
+   ],
+   "resumen": "Inhibe la entrada de iones de calcio a través de los canales tipo L en el músculo liso vascular arterial periférico y coronario, produciendo vasodilatación arteriolar sostenida, disminución de la resistencia vascular sistémica y descenso de la presión arterial."
+  },
+  {
+   "id": "FT:0001",
+   "tipo": "ficha",
+   "titulo": "Metformina en la diabetes mellitus tipo 2 del adulto",
+   "titulo_en": "Metformin in type 2 diabetes mellitus in adults",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "farmaco": "FS:0001",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "clase": "Biguanida",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "indicacion_en": "Type 2 diabetes mellitus",
+   "poblacion": "Adultos con diabetes mellitus tipo 2 de diagnóstico reciente, con sobrepeso, sin síntomas de hiperglucemia tras un periodo inicial de dieta.",
+   "cie11": "5A11",
+   "lme": true,
+   "lme_seccion": "18.5.2",
+   "estado": "revisado",
+   "fecha": "2026-08-24",
+   "actualizado": "2026-08-24",
+   "certeza_global": "moderada",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda la metformina como tratamiento farmacológico inicial en el adulto con diabetes mellitus tipo 2 y sobrepeso, salvo contraindicación por función renal o acidosis metabólica.",
+   "resumen": "En el adulto con sobrepeso y diabetes tipo 2 de diagnóstico reciente, la metformina redujo la mortalidad total, la muerte relacionada con la diabetes y los desenlaces clínicos de la enfermedad frente a la política convencional, con menos hipoglucemias y menos ganancia de peso que la insulina y las sulfonilureas. La acidosis láctica, que motiva la advertencia con recuadro de la FDA, no pudo medirse en 70 490 años-paciente porque no aparecieron casos. Lo que de verdad limita su uso no es ese riesgo, sino el filtrado glomerular.",
+   "semaforo": "verde",
+   "perla": "Fármaco de primera elección en DM2 del adulto con sobrepeso. Reduce mortalidad global (NNT 16 a 10.7 años). Iniciar con 500-850 mg con las comidas y titular lentamente cada 1-2 semanas para evitar intolerancia digestiva inicial.",
+   "alerta_seguridad": "Comprobar siempre el filtrado glomerular: contraindicada con TFGe < 30 mL/min/1,73 m² por riesgo de acidosis láctica.",
+   "nnt": 16,
+   "nnt_desenlace": "Mortalidad por cualquier causa",
+   "horizonte_nnt": "10.7 años",
+   "nnh": ">20000",
+   "nnh_evento": "Acidosis láctica asociada a metformina",
+   "horizonte_nnh": "1 año",
+   "desenlaces": [
+    "Mortalidad por cualquier causa",
+    "Muerte relacionada con la diabetes",
+    "Cualquier desenlace clínico relacionado con la diabetes",
+    "Acidosis láctica"
+   ],
+   "disenos": [
+    "eca",
+    "revision_sistematica"
+   ],
+   "n_desenlaces": 4,
+   "n_criticos": 3,
+   "refs": [
+    "pmid:9742977",
+    "pmid:20393934",
+    "pmid:36151309"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 3
+  },
+  {
+   "id": "FT:0002",
+   "tipo": "ficha",
+   "titulo": "Apixabán en la prevención de ictus en fibrilación auricular no valvular",
+   "titulo_en": "Apixaban for stroke prevention in non-valvular atrial fibrillation",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "farmaco": "FS:0002",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "clase": "Inhibidor directo del factor Xa",
+   "indicacion": "Fibrilación auricular no valvular",
+   "indicacion_en": "Non-valvular atrial fibrillation",
+   "poblacion": "Adultos con fibrilación auricular no valvular y al menos un factor de riesgo adicional de ictus.",
+   "cie11": "BC81.3",
+   "lme": false,
+   "estado": "revisado",
+   "fecha": "2026-08-24",
+   "actualizado": "2026-08-24",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda apixabán como anticoagulante oral preferente frente a warfarina en adultos con fibrilación auricular no valvular y riesgo tromboembólico.",
+   "resumen": "En pacientes con fibrilación auricular no valvular, apixabán demostró superioridad frente a warfarina en la prevención de ictus y embolia sistémica, con menor mortalidad global y una reducción significativa del 31% en hemorragias mayores y del 58% en hemorragias intracraneales.",
+   "semaforo": "verde",
+   "perla": "Anticoagulante oral de primera línea en FANV. Reduce ictus (NNT 303/año) y mortalidad (NNT 238/año) con menor sangrado mayor (RRR 31%) y 58% menos hemorragia intracraneal que warfarina. Dosis: 5 mg c/12h.",
+   "alerta_seguridad": "Reducir dosis a 2.5 mg c/12h si cumple >=2 de 3: Edad >= 80 años, Peso <= 60 kg, Creatinina >= 1.5 mg/dL.",
+   "nnt": 303,
+   "nnt_desenlace": "Ictus o embolia sistémica",
+   "horizonte_nnt": "1 año (NNT 167 a 1.8 años)",
+   "nnh": "Beneficio neto (NNT 104/año para evitar sangrado)",
+   "nnh_evento": "Hemorragia mayor",
+   "horizonte_nnh": "1 año",
+   "desenlaces": [
+    "Ictus o embolia sistémica",
+    "Mortalidad por cualquier causa",
+    "Hemorragia mayor"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 3,
+   "n_criticos": 3,
+   "refs": [
+    "pmid:21870978"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 1
+  },
+  {
+   "id": "FT:0003",
+   "tipo": "ficha",
+   "titulo": "Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico",
+   "titulo_en": "Pembrolizumab in metastatic non-squamous non-small-cell lung cancer",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "farmaco": "FS:0003",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "clase": "Anticuerpo monoclonal anti-PD-1",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "indicacion_en": "First-line metastatic non-squamous non-small cell lung cancer",
+   "poblacion": "Adultos con CPNM metastásico no escamoso en primera línea, sin mutaciones EGFR ni translocaciones ALK.",
+   "cie11": "2C25.0",
+   "lme": true,
+   "lme_seccion": "8.2",
+   "estado": "revisado",
+   "fecha": "2026-08-24",
+   "actualizado": "2026-08-24",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda pembrolizumab combinado con quimioterapia estándar en primera línea en adultos con CPNM metastásico no escamoso sin mutaciones diana.",
+   "resumen": "La adición de pembrolizumab a la quimioterapia con platino y pemetrexed mejoró significativamente la supervivencia global y libre de progresión en pacientes con CPNM no escamoso avanzado independientemente de la expresión de PD-L1.",
+   "semaforo": "verde",
+   "perla": "Estándar de 1ª línea combinado con pemetrexed/platino. Reduce mortalidad un 51% a 12 meses (HR 0.49; NNT 5 a 1 año). Dosis: 200 mg IV cada 3 semanas.",
+   "alerta_seguridad": "Vigilar toxicidades inmunomediadas severas (NNH 14): neumonitis, colitis, tiroiditis. Suspender e iniciar corticoides (1-2 mg/kg/día).",
+   "nnt": 5,
+   "nnt_desenlace": "Supervivencia global (OS) a 12 meses",
+   "horizonte_nnt": "1 año",
+   "nnh": 14,
+   "nnh_evento": "Reacciones adversas inmunomediadas severas (Grado 3-5)",
+   "horizonte_nnh": "Período de tratamiento activo",
+   "desenlaces": [
+    "Supervivencia global (OS) a 12 meses",
+    "Supervivencia libre de progresión (PFS)"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 2,
+   "n_criticos": 2,
+   "refs": [
+    "pmid:29658856"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 1
+  },
+  {
+   "id": "FT:0004",
+   "tipo": "ficha",
+   "titulo": "Guselkumab en la artritis psoriásica activa del adulto",
+   "titulo_en": "Guselkumab for active psoriatic arthritis in adults",
+   "url": "fichas/FT0004-guselkumab-artritis-psoriasica.html",
+   "farmaco": "FS:0004",
+   "dci": "Guselkumab",
+   "atc": "L04AC16",
+   "clase": "Inhibidor selectivo de la interleucina-23 (anti-IL-23p19)",
+   "indicacion": "Artritis psoriásica activa",
+   "indicacion_en": "Active psoriatic arthritis",
+   "poblacion": "Adultos con artritis psoriásica activa con respuesta inadecuada o intolerancia a FARME convencionales.",
+   "cie11": "FA20",
+   "lme": false,
+   "estado": "revisado",
+   "fecha": "2026-08-24",
+   "actualizado": "2026-08-24",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda guselkumab en adultos con artritis psoriásica activa que no han respondido adecuadamente a FARME sintéticos tradicionales.",
+   "resumen": "Guselkumab demostró una eficacia articular y cutánea superior al placebo a las 24 semanas en pacientes con artritis psoriásica activa bio-naïve, con un perfil de seguridad muy favorable.",
+   "semaforo": "verde",
+   "perla": "Inhibidor selectivo IL-23p19 con alta eficacia articular (ACR20 NNT 4) y cutánea (PASI90 NNT 2 a 24 semanas). Pauta de mantenimiento cada 8 semanas y perfil de seguridad excelente sin incremento de infecciones oportunistas graves.",
+   "alerta_seguridad": "Descartar tuberculosis activa/latente e infecciones graves antes del inicio.",
+   "nnt": 4,
+   "nnt_desenlace": "Respuesta articular ACR 20 a semana 24",
+   "horizonte_nnt": "24 semanas",
+   "nnh": ">1000",
+   "nnh_evento": "Infecciones graves Grado 3 o 4",
+   "horizonte_nnh": "24 semanas",
+   "desenlaces": [
+    "Respuesta articular ACR 20 a semana 24",
+    "Aclaramiento cutáneo PASI 90 a semana 24"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 2,
+   "n_criticos": 1,
+   "refs": [
+    "pmid:32178766"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 1
+  },
+  {
+   "id": "FT:0005",
+   "tipo": "ficha",
+   "titulo": "Ibrutinib en la leucemia linfocítica crónica no tratada previamente",
+   "titulo_en": "Ibrutinib for previously untreated chronic lymphocytic leukemia",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "farmaco": "FS:0005",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "clase": "Inhibidor de la tirosina quinasa de Bruton (BTK)",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "indicacion_en": "First-line chronic lymphocytic leukemia",
+   "poblacion": "Adultos de edad avanzada (>=65 años) con leucemia linfocítica crónica no tratada previamente.",
+   "cie11": "2A70.0",
+   "lme": true,
+   "lme_seccion": "8.2",
+   "estado": "revisado",
+   "fecha": "2026-08-24",
+   "actualizado": "2026-08-24",
+   "certeza_global": "moderada",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "condicional",
+   "recomendacion": "Se sugiere ibrutinib como opción de primera línea en adultos de edad avanzada con LLC, sopesando el perfil de comorbilidad cardiovascular previo.",
+   "resumen": "Ibrutinib demostró una prolongación sustancial de la supervivencia libre de progresión y global frente a clorambucilo en primera línea de LLC en pacientes mayores, aunque con un incremento en la incidencia de fibrilación auricular e hipertensión.",
+   "semaforo": "amarillo",
+   "perla": "Inhibidor de BTK de alta eficacia en primera línea (reducción del 84% en progresión/muerte, NNT 2 a 2 años). Semáforo AMARILLO por cardiotoxicidad (FA en 6%, NNH 20) y riesgo de sangrado. Dosis: 420 mg vía oral una vez al día.",
+   "alerta_seguridad": "Realizar ECG basal y evitar anticoagulación oral concomitante si es posible. Suspender 3-7 días antes de cirugía mayor.",
+   "nnt": 2,
+   "nnt_desenlace": "Supervivencia libre de progresión (PFS) a 24 meses",
+   "horizonte_nnt": "2 años",
+   "nnh": 20,
+   "nnh_evento": "Fibrilación auricular de nueva aparición",
+   "horizonte_nnh": "Mediana de 18.4 meses",
+   "desenlaces": [
+    "Supervivencia libre de progresión (PFS) a 24 meses",
+    "Supervivencia global (OS) a 24 meses"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 2,
+   "n_criticos": 2,
+   "refs": [
+    "pmid:26639149"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 1
+  },
+  {
+   "id": "FT:0006",
+   "tipo": "ficha",
+   "titulo": "Enalapril en la insuficiencia cardíaca con fracción de eyección reducida",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "farmaco": "FS:0006",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "clase": "Inhibidor de la enzima convertidora de angiotensina (IECA)",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "indicacion_en": "Symptomatic heart failure with reduced ejection fraction (HFrEF)",
+   "poblacion": "Adultos con insuficiencia cardíaca crónica sintomática (NYHA II-IV) y disfunción sistólica ventricular izquierda (FEVI ≤ 35%)",
+   "cie11": "BD11.0",
+   "lme": true,
+   "lme_seccion": "12.3",
+   "estado": "revisado",
+   "fecha": "2026-08-25",
+   "actualizado": "2026-08-25",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda el tratamiento con Enalapril (o IECA equivalente / ARNI) en todos los pacientes con insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%), salvo contraindicación o intolerancia demostrada, para reducir la mortalidad y las hospitalizaciones.",
+   "resumen": "Enalapril cuenta con evidencia de certeza alta (ensayos SOLVD y CONSENSUS) que demuestra un beneficio rotundo en supervivencia global (NNT 23) y reducción de descompensaciones (NNT 10). Sus efectos adversos (hipotensión y tos) son manejables en la práctica clínica mediante titulación prudente y monitorización bioquímica.",
+   "semaforo": "verde",
+   "perla": "Pilar fundamental en IC-FEr: reduce mortalidad total (NNT 23 a 3.5 años) y hospitalización por IC (NNT 10). Iniciar a dosis baja (2.5 mg bid) y titular hasta 10–20 mg bid según tolerancia tensional, vigilando potasio y función renal a las 1–2 semanas.",
+   "alerta_seguridad": "Contraindicado ante antecedente de angioedema por IECA o estenosis bilateral de la arteria renal. Suspender inmediatamente si se confirma embarazo.",
+   "nnt": 23,
+   "nnt_desenlace": "Mortalidad por todas las causas a 3.5 años",
+   "horizonte_nnt": "a 3.5 años",
+   "nnh": 20,
+   "nnh_evento": "Mareo / Hipotensión sintomática",
+   "horizonte_nnh": "a 3 años",
+   "desenlaces": [
+    "Mortalidad por todas las causas a 3.5 años",
+    "Muerte o primera hospitalización por insuficiencia cardíaca",
+    "Mortalidad a 6 meses en insuficiencia cardíaca severa (NYHA IV)"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 3,
+   "n_criticos": 3,
+   "refs": [
+    "pmid:2057034",
+    "pmid:2883575",
+    "fda:label"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 3
+  },
+  {
+   "id": "FT:0007",
+   "tipo": "ficha",
+   "titulo": "Empagliflozina en la insuficiencia cardíaca crónica",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "farmaco": "FS:0007",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "clase": "Inhibidor del cotransportador sodio-glucosa tipo 2 (iSGLT2)",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "indicacion_en": "Chronic heart failure (reduced or preserved ejection fraction)",
+   "poblacion": "Adultos con insuficiencia cardíaca crónica sintomática (NYHA II-IV), con o sin diabetes mellitus tipo 2",
+   "cie11": "BD11",
+   "lme": true,
+   "lme_seccion": "18.5.2",
+   "estado": "revisado",
+   "fecha": "2026-08-25",
+   "actualizado": "2026-08-25",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda añadir Empagliflozina 10 mg/día al tratamiento estándar en todos los pacientes con insuficiencia cardíaca sintomática (con o sin diabetes) para reducir el riesgo de muerte cardiovascular y hospitalización por insuficiencia cardíaca.",
+   "resumen": "Empagliflozina ofrece un beneficio cardioprotector y nefroprotector precoz y consistente (NNT 20 en 16 meses) con un perfil de seguridad sumamente favorable y una pauta posológica simplificada de una toma diaria sin titulación.",
+   "semaforo": "verde",
+   "perla": "Cuádruple terapia obligatoria en IC: dosis única fija de 10 mg/día (sin titulación requerida), independientemente de si el paciente es diabético o no. Reduce hospitalizaciones por IC y muerte CV (NNT 20 a 16 meses) y enlentece el deterioro de la función renal.",
+   "alerta_seguridad": "Educar sobre higiene urogenital para prevenir micosis genitales (NNH 56). Suspender temporalmente ante situaciones de estrés agudo, ayuno prolongado o cirugía mayor por riesgo de cetoacidosis euglucémica.",
+   "nnt": 20,
+   "nnt_desenlace": "Compuesto de muerte cardiovascular o primera hospitalización por insuficiencia cardíaca",
+   "horizonte_nnt": "a 16 meses",
+   "nnh": 56,
+   "nnh_evento": "Infección micótica genital (candidiasis vulvovaginal / balanitis)",
+   "horizonte_nnh": "a 16 meses",
+   "desenlaces": [
+    "Compuesto de muerte cardiovascular o primera hospitalización por insuficiencia cardíaca",
+    "Total de hospitalizaciones por insuficiencia cardíaca (primeras y recurrentes)",
+    "Muerte cardiovascular en diabetes tipo 2 con enfermedad cardiovascular establecida"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 3,
+   "n_criticos": 3,
+   "refs": [
+    "pmid:32865377",
+    "pmid:26378978",
+    "fda:label"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 3
+  },
+  {
+   "id": "FT:0008",
+   "tipo": "ficha",
+   "titulo": "Amlodipino en la hipertensión arterial esencial",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "farmaco": "FS:0008",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "clase": "Antagonista de los canales de calcio dihidropiridínico",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "indicacion_en": "Essential hypertension in adults",
+   "poblacion": "Adultos con hipertensión arterial primaria (estadio 1 o 2), con o sin factores de riesgo cardiovascular adicionales",
+   "cie11": "BA00",
+   "lme": true,
+   "lme_seccion": "12.3",
+   "estado": "revisado",
+   "fecha": "2026-08-25",
+   "actualizado": "2026-08-25",
+   "certeza_global": "alta",
+   "recomendacion_direccion": "a_favor",
+   "recomendacion_fuerza": "fuerte",
+   "recomendacion": "Se recomienda Amlodipino (5 a 10 mg/día) como una de las opciones de primera línea en monoterapia o en combinación con IECA/ARA-II para el control de la hipertensión arterial esencial y la reducción de eventos cerebrovasculares.",
+   "resumen": "Amlodipino es un pilar esencial del tratamiento antihipertensivo con sólida evidencia de reducción de ictus (NNT 100 a 5.5 años). Su principal efecto adverso, el edema maleolar (NNH 14), es benigno y se previene o atenúa eficazmente asociando un IECA o ARA-II.",
+   "semaforo": "verde",
+   "perla": "Antihipertensivo de primera línea con control tensional suave y prolongado (24 h) en toma única. Especialmente eficaz en ancianos, personas de raza negra e hipertensión sistólica aislada. Reduce eventos cardiovasculares mayores e ictus (NNT 100 a 5.5 años).",
+   "alerta_seguridad": "Vigilar la aparición de edema maleolar (NNH 14 a 1 año), que responde a vasodilatación precapilar y no a sobrecarga hidrosalina (no responde a diuréticos; mejora combinando con IECA/ARA-II).",
+   "nnt": 100,
+   "nnt_desenlace": "Ictus mortal y no mortal a 5.5 años",
+   "horizonte_nnt": "a 5.5 años",
+   "nnh": 14,
+   "nnh_evento": "Edema periférico / maleolar dependiente de dosis",
+   "horizonte_nnh": "a 1 año",
+   "desenlaces": [
+    "Ictus mortal y no mortal a 5.5 años",
+    "Mortalidad por todas las causas a 5.5 años",
+    "Enfermedad coronaria mortal o infarto de miocardio no mortal a 4.9 años"
+   ],
+   "disenos": [
+    "eca"
+   ],
+   "n_desenlaces": 3,
+   "n_criticos": 3,
+   "refs": [
+    "pmid:12479763",
+    "pmid:16154016",
+    "fda:label"
+   ],
+   "autores": [
+    {
+     "nombre": "Dr. Alcy Edmundo Torres Guerrero"
+    }
+   ],
+   "n_refs": 3
+  }
+ ]
+}

@@ -1,0 +1,1524 @@
+{
+ "generado": "2026-08-26T00:32:41+00:00",
+ "total": 49,
+ "tipos": [
+  "certeza_grade",
+  "efecto",
+  "fuerza",
+  "recomendacion",
+  "semaforo"
+ ],
+ "preguntas": [
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Metformina en la diabetes mellitus tipo 2 del adulto», ¿qué certeza GRADE tiene el desenlace «Mortalidad por cualquier causa»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": false
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": true
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza moderada, por riesgo de sesgo. Efecto: reducción del riesgo del 36 % (IC95 % 9–55), p = 0,011.",
+   "ref": "pmid:9742977"
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Metformina en la diabetes mellitus tipo 2 del adulto», ¿qué certeza GRADE tiene el desenlace «Muerte relacionada con la diabetes»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": false
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": true
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza moderada, por riesgo de sesgo. Efecto: reducción del riesgo del 42 % (IC95 % 9–63), p = 0,017.",
+   "ref": "pmid:9742977"
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-certeza-2",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Metformina en la diabetes mellitus tipo 2 del adulto», ¿qué certeza GRADE tiene el desenlace «Acidosis láctica»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": false
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": true
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza moderada, por imprecisión. Efecto: ningún caso, mortal ni no mortal; límite superior de la incidencia real 4,3 casos por 100 000 años-paciente frente a 5,4 sin metformina.",
+   "ref": "pmid:20393934"
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Metformina en la diabetes mellitus tipo 2 del adulto»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda la metformina como tratamiento farmacológico inicial en el adulto con diabetes mellitus tipo 2 y sobrepeso, salvo contraindicación por función renal o acidosis metabólica."
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Metformina en la diabetes mellitus tipo 2 del adulto»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global moderada. Se recomienda la metformina como tratamiento farmacológico inicial en el adulto con diabetes mellitus tipo 2 y sobrepeso, salvo contraindicación por función renal o acidosis metabólica."
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Metformina en la diabetes mellitus tipo 2 del adulto»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Fármaco de primera elección en DM2 del adulto con sobrepeso. Reduce mortalidad global (NNT 16 a 10.7 años). Iniciar con 500-850 mg con las comidas y titular lentamente cada 1-2 semanas para evitar intolerancia digestiva inicial."
+  },
+  {
+   "ficha": "FT:0001",
+   "url": "fichas/FT0001-metformina-diabetes-tipo-2.html",
+   "dci": "Metformina",
+   "atc": "A10BA02",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Diabetes mellitus tipo 2",
+   "id": "FT:0001-efecto",
+   "tipo": "efecto",
+   "enunciado": "En «Metformina en la diabetes mellitus tipo 2 del adulto», ¿qué efecto se midió para «Acidosis láctica»?",
+   "opciones": [
+    {
+     "texto": "reducción del riesgo del 36 % (IC95 % 9–55), p = 0,011",
+     "valor": "Mortalidad por cualquier causa",
+     "correcta": false
+    },
+    {
+     "texto": "reducción del riesgo del 32 % (IC95 % 13–47), p = 0,002",
+     "valor": "Cualquier desenlace clínico relacionado con la diabetes",
+     "correcta": false
+    },
+    {
+     "texto": "ningún caso, mortal ni no mortal; límite superior de la incidencia real 4,3 casos por 100 000 años-paciente frente a 5,4 sin metformina",
+     "valor": "Acidosis láctica",
+     "correcta": true
+    },
+    {
+     "texto": "reducción del riesgo del 42 % (IC95 % 9–63), p = 0,017",
+     "valor": "Muerte relacionada con la diabetes",
+     "correcta": false
+    }
+   ],
+   "explicacion": "revisión Cochrane de 347 estudios comparativos y de cohortes, revision_sistematica. ningún caso, mortal ni no mortal; límite superior de la incidencia real 4,3 casos por 100 000 años-paciente frente a 5,4 sin metformina",
+   "ref": "pmid:20393934"
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Apixabán en la prevención de ictus en fibrilación auricular no valvular», ¿qué certeza GRADE tiene el desenlace «Ictus o embolia sistémica»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción del riesgo del 21 % (HR 0,79, IC95 % 0,66–0,95), p = 0,01.",
+   "ref": "pmid:21870978"
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Apixabán en la prevención de ictus en fibrilación auricular no valvular», ¿qué certeza GRADE tiene el desenlace «Mortalidad por cualquier causa»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción del riesgo del 11 % (HR 0,89, IC95 % 0,80–0,998), p = 0,047.",
+   "ref": "pmid:21870978"
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-certeza-2",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Apixabán en la prevención de ictus en fibrilación auricular no valvular», ¿qué certeza GRADE tiene el desenlace «Hemorragia mayor»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción del sangrado mayor del 31 % (HR 0,69, IC95 % 0,60–0,80), p < 0,001.",
+   "ref": "pmid:21870978"
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Apixabán en la prevención de ictus en fibrilación auricular no valvular»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda apixabán como anticoagulante oral preferente frente a warfarina en adultos con fibrilación auricular no valvular y riesgo tromboembólico."
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Apixabán en la prevención de ictus en fibrilación auricular no valvular»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda apixabán como anticoagulante oral preferente frente a warfarina en adultos con fibrilación auricular no valvular y riesgo tromboembólico."
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Apixabán en la prevención de ictus en fibrilación auricular no valvular»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Anticoagulante oral de primera línea en FANV. Reduce ictus (NNT 303/año) y mortalidad (NNT 238/año) con menor sangrado mayor (RRR 31%) y 58% menos hemorragia intracraneal que warfarina. Dosis: 5 mg c/12h."
+  },
+  {
+   "ficha": "FT:0002",
+   "url": "fichas/FT0002-apixaban-fibrilacion-auricular.html",
+   "dci": "Apixabán",
+   "atc": "B01AF02",
+   "lme_seccion": null,
+   "indicacion": "Fibrilación auricular no valvular",
+   "id": "FT:0002-efecto",
+   "tipo": "efecto",
+   "enunciado": "En «Apixabán en la prevención de ictus en fibrilación auricular no valvular», ¿qué efecto se midió para «Mortalidad por cualquier causa»?",
+   "opciones": [
+    {
+     "texto": "reducción del sangrado mayor del 31 % (HR 0,69, IC95 % 0,60–0,80), p < 0,001",
+     "valor": "Hemorragia mayor",
+     "correcta": false
+    },
+    {
+     "texto": "reducción del riesgo del 11 % (HR 0,89, IC95 % 0,80–0,998), p = 0,047",
+     "valor": "Mortalidad por cualquier causa",
+     "correcta": true
+    },
+    {
+     "texto": "reducción del riesgo del 21 % (HR 0,79, IC95 % 0,66–0,95), p = 0,01",
+     "valor": "Ictus o embolia sistémica",
+     "correcta": false
+    }
+   ],
+   "explicacion": "ARISTOTLE, eca. reducción del riesgo del 11 % (HR 0,89, IC95 % 0,80–0,998), p = 0,047",
+   "ref": "pmid:21870978"
+  },
+  {
+   "ficha": "FT:0003",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "lme_seccion": "8.2",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "id": "FT:0003-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico», ¿qué certeza GRADE tiene el desenlace «Supervivencia global (OS) a 12 meses»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción de mortalidad del 51 % (HR 0,49, IC95 % 0,38–0,64), p < 0,001.",
+   "ref": "pmid:29658856"
+  },
+  {
+   "ficha": "FT:0003",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "lme_seccion": "8.2",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "id": "FT:0003-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico», ¿qué certeza GRADE tiene el desenlace «Supervivencia libre de progresión (PFS)»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción de progresión/muerte del 48 % (HR 0,52, IC95 % 0,42–0,64), p < 0,001.",
+   "ref": "pmid:29658856"
+  },
+  {
+   "ficha": "FT:0003",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "lme_seccion": "8.2",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "id": "FT:0003-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda pembrolizumab combinado con quimioterapia estándar en primera línea en adultos con CPNM metastásico no escamoso sin mutaciones diana."
+  },
+  {
+   "ficha": "FT:0003",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "lme_seccion": "8.2",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "id": "FT:0003-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda pembrolizumab combinado con quimioterapia estándar en primera línea en adultos con CPNM metastásico no escamoso sin mutaciones diana."
+  },
+  {
+   "ficha": "FT:0003",
+   "url": "fichas/FT0003-pembrolizumab-cancer-pulmon.html",
+   "dci": "Pembrolizumab",
+   "atc": "L01FF02",
+   "lme_seccion": "8.2",
+   "indicacion": "Cáncer de pulmón no microcítico no escamoso metastásico",
+   "id": "FT:0003-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Pembrolizumab en cáncer de pulmón no microcítico no escamoso metastásico»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Estándar de 1ª línea combinado con pemetrexed/platino. Reduce mortalidad un 51% a 12 meses (HR 0.49; NNT 5 a 1 año). Dosis: 200 mg IV cada 3 semanas."
+  },
+  {
+   "ficha": "FT:0004",
+   "url": "fichas/FT0004-guselkumab-artritis-psoriasica.html",
+   "dci": "Guselkumab",
+   "atc": "L04AC16",
+   "lme_seccion": null,
+   "indicacion": "Artritis psoriásica activa",
+   "id": "FT:0004-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Guselkumab en la artritis psoriásica activa del adulto», ¿qué certeza GRADE tiene el desenlace «Respuesta articular ACR 20 a semana 24»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: incremento significativo de respuesta ACR20 (OR 3,65, IC95 % 2,49–5,34), p < 0,0001.",
+   "ref": "pmid:32178766"
+  },
+  {
+   "ficha": "FT:0004",
+   "url": "fichas/FT0004-guselkumab-artritis-psoriasica.html",
+   "dci": "Guselkumab",
+   "atc": "L04AC16",
+   "lme_seccion": null,
+   "indicacion": "Artritis psoriásica activa",
+   "id": "FT:0004-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Guselkumab en la artritis psoriásica activa del adulto»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda guselkumab en adultos con artritis psoriásica activa que no han respondido adecuadamente a FARME sintéticos tradicionales."
+  },
+  {
+   "ficha": "FT:0004",
+   "url": "fichas/FT0004-guselkumab-artritis-psoriasica.html",
+   "dci": "Guselkumab",
+   "atc": "L04AC16",
+   "lme_seccion": null,
+   "indicacion": "Artritis psoriásica activa",
+   "id": "FT:0004-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Guselkumab en la artritis psoriásica activa del adulto»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda guselkumab en adultos con artritis psoriásica activa que no han respondido adecuadamente a FARME sintéticos tradicionales."
+  },
+  {
+   "ficha": "FT:0004",
+   "url": "fichas/FT0004-guselkumab-artritis-psoriasica.html",
+   "dci": "Guselkumab",
+   "atc": "L04AC16",
+   "lme_seccion": null,
+   "indicacion": "Artritis psoriásica activa",
+   "id": "FT:0004-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Guselkumab en la artritis psoriásica activa del adulto»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Inhibidor selectivo IL-23p19 con alta eficacia articular (ACR20 NNT 4) y cutánea (PASI90 NNT 2 a 24 semanas). Pauta de mantenimiento cada 8 semanas y perfil de seguridad excelente sin incremento de infecciones oportunistas graves."
+  },
+  {
+   "ficha": "FT:0005",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "lme_seccion": "8.2",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "id": "FT:0005-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Ibrutinib en la leucemia linfocítica crónica no tratada previamente», ¿qué certeza GRADE tiene el desenlace «Supervivencia libre de progresión (PFS) a 24 meses»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: reducción de progresión/muerte del 84 % (HR 0,16, IC95 % 0,09–0,28), p < 0,001.",
+   "ref": "pmid:26639149"
+  },
+  {
+   "ficha": "FT:0005",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "lme_seccion": "8.2",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "id": "FT:0005-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Ibrutinib en la leucemia linfocítica crónica no tratada previamente», ¿qué certeza GRADE tiene el desenlace «Supervivencia global (OS) a 24 meses»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": false
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": true
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza moderada, por carácter secundario. Efecto: reducción de mortalidad del 84 % (HR 0,16, IC95 % 0,05–0,56), p = 0,001.",
+   "ref": "pmid:26639149"
+  },
+  {
+   "ficha": "FT:0005",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "lme_seccion": "8.2",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "id": "FT:0005-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Ibrutinib en la leucemia linfocítica crónica no tratada previamente»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se sugiere ibrutinib como opción de primera línea en adultos de edad avanzada con LLC, sopesando el perfil de comorbilidad cardiovascular previo."
+  },
+  {
+   "ficha": "FT:0005",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "lme_seccion": "8.2",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "id": "FT:0005-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Ibrutinib en la leucemia linfocítica crónica no tratada previamente»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": true
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza global moderada. Se sugiere ibrutinib como opción de primera línea en adultos de edad avanzada con LLC, sopesando el perfil de comorbilidad cardiovascular previo."
+  },
+  {
+   "ficha": "FT:0005",
+   "url": "fichas/FT0005-ibrutinib-leucemia-linfocitica-cronica.html",
+   "dci": "Ibrutinib",
+   "atc": "L01EL01",
+   "lme_seccion": "8.2",
+   "indicacion": "Leucemia linfocítica crónica en primera línea",
+   "id": "FT:0005-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Ibrutinib en la leucemia linfocítica crónica no tratada previamente»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": true
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Semáforo AMARILLO. Perla: Inhibidor de BTK de alta eficacia en primera línea (reducción del 84% en progresión/muerte, NNT 2 a 2 años). Semáforo AMARILLO por cardiotoxicidad (FA en 6%, NNH 20) y riesgo de sangrado. Dosis: 420 mg vía oral una vez al día."
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida», ¿qué certeza GRADE tiene el desenlace «Mortalidad por todas las causas a 3.5 años»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 16 % (HR 0.84, IC 95 % 0.74–0.95), p = 0.0036.",
+   "ref": "pmid:2057034"
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida», ¿qué certeza GRADE tiene el desenlace «Muerte o primera hospitalización por insuficiencia cardíaca»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 26 % (HR 0.74, IC 95 % 0.66–0.83), p < 0.0001.",
+   "ref": "pmid:2057034"
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-certeza-2",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida», ¿qué certeza GRADE tiene el desenlace «Mortalidad a 6 meses en insuficiencia cardíaca severa (NYHA IV)»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 40 % (39 % vs 54 % con placebo), p = 0.003.",
+   "ref": "pmid:2883575"
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda el tratamiento con Enalapril (o IECA equivalente / ARNI) en todos los pacientes con insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%), salvo contraindicación o intolerancia demostrada, para reducir la mortalidad y las hospitalizaciones."
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda el tratamiento con Enalapril (o IECA equivalente / ARNI) en todos los pacientes con insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%), salvo contraindicación o intolerancia demostrada, para reducir la mortalidad y las hospitalizaciones."
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Pilar fundamental en IC-FEr: reduce mortalidad total (NNT 23 a 3.5 años) y hospitalización por IC (NNT 10). Iniciar a dosis baja (2.5 mg bid) y titular hasta 10–20 mg bid según tolerancia tensional, vigilando potasio y función renal a las 1–2 semanas."
+  },
+  {
+   "ficha": "FT:0006",
+   "url": "fichas/FT0006-enalapril-insuficiencia-cardiaca-fraccion-eyeccion-reducida.html",
+   "dci": "Enalapril",
+   "atc": "C09AA02",
+   "lme_seccion": "12.3",
+   "indicacion": "Insuficiencia cardíaca sintomática con fracción de eyección reducida (FEVI ≤ 35%)",
+   "id": "FT:0006-efecto",
+   "tipo": "efecto",
+   "enunciado": "En «Enalapril en la insuficiencia cardíaca con fracción de eyección reducida», ¿qué efecto se midió para «Muerte o primera hospitalización por insuficiencia cardíaca»?",
+   "opciones": [
+    {
+     "texto": "Reducción relativa del 16 % (HR 0.84, IC 95 % 0.74–0.95), p = 0.0036",
+     "valor": "Mortalidad por todas las causas a 3.5 años",
+     "correcta": false
+    },
+    {
+     "texto": "Reducción relativa del 40 % (39 % vs 54 % con placebo), p = 0.003",
+     "valor": "Mortalidad a 6 meses en insuficiencia cardíaca severa (NYHA IV)",
+     "correcta": false
+    },
+    {
+     "texto": "Reducción relativa del 26 % (HR 0.74, IC 95 % 0.66–0.83), p < 0.0001",
+     "valor": "Muerte o primera hospitalización por insuficiencia cardíaca",
+     "correcta": true
+    }
+   ],
+   "explicacion": "SOLVD Treatment (1991), eca. Reducción relativa del 26 % (HR 0.74, IC 95 % 0.66–0.83), p < 0.0001",
+   "ref": "pmid:2057034"
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Empagliflozina en la insuficiencia cardíaca crónica», ¿qué certeza GRADE tiene el desenlace «Compuesto de muerte cardiovascular o primera hospitalización por insuficiencia cardíaca»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 25 % (HR 0.75, IC 95 % 0.65–0.86), p < 0.001.",
+   "ref": "pmid:32865377"
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Empagliflozina en la insuficiencia cardíaca crónica», ¿qué certeza GRADE tiene el desenlace «Total de hospitalizaciones por insuficiencia cardíaca (primeras y recurrentes)»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción del 30 % en tasa de eventos (HR 0.70, IC 95 % 0.58–0.85), p < 0.001.",
+   "ref": "pmid:32865377"
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-certeza-2",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Empagliflozina en la insuficiencia cardíaca crónica», ¿qué certeza GRADE tiene el desenlace «Muerte cardiovascular en diabetes tipo 2 con enfermedad cardiovascular establecida»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 38 % (HR 0.62, IC 95 % 0.49–0.77), p < 0.001.",
+   "ref": "pmid:26378978"
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Empagliflozina en la insuficiencia cardíaca crónica»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda añadir Empagliflozina 10 mg/día al tratamiento estándar en todos los pacientes con insuficiencia cardíaca sintomática (con o sin diabetes) para reducir el riesgo de muerte cardiovascular y hospitalización por insuficiencia cardíaca."
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Empagliflozina en la insuficiencia cardíaca crónica»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda añadir Empagliflozina 10 mg/día al tratamiento estándar en todos los pacientes con insuficiencia cardíaca sintomática (con o sin diabetes) para reducir el riesgo de muerte cardiovascular y hospitalización por insuficiencia cardíaca."
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Empagliflozina en la insuficiencia cardíaca crónica»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Cuádruple terapia obligatoria en IC: dosis única fija de 10 mg/día (sin titulación requerida), independientemente de si el paciente es diabético o no. Reduce hospitalizaciones por IC y muerte CV (NNT 20 a 16 meses) y enlentece el deterioro de la función renal."
+  },
+  {
+   "ficha": "FT:0007",
+   "url": "fichas/FT0007-empagliflozina-insuficiencia-cardiaca.html",
+   "dci": "Empagliflozina",
+   "atc": "A10BK03",
+   "lme_seccion": "18.5.2",
+   "indicacion": "Insuficiencia cardíaca crónica (con fracción de eyección reducida o preservada)",
+   "id": "FT:0007-efecto",
+   "tipo": "efecto",
+   "enunciado": "En «Empagliflozina en la insuficiencia cardíaca crónica», ¿qué efecto se midió para «Muerte cardiovascular en diabetes tipo 2 con enfermedad cardiovascular establecida»?",
+   "opciones": [
+    {
+     "texto": "Reducción relativa del 38 % (HR 0.62, IC 95 % 0.49–0.77), p < 0.001",
+     "valor": "Muerte cardiovascular en diabetes tipo 2 con enfermedad cardiovascular establecida",
+     "correcta": true
+    },
+    {
+     "texto": "Reducción del 30 % en tasa de eventos (HR 0.70, IC 95 % 0.58–0.85), p < 0.001",
+     "valor": "Total de hospitalizaciones por insuficiencia cardíaca (primeras y recurrentes)",
+     "correcta": false
+    },
+    {
+     "texto": "Reducción relativa del 25 % (HR 0.75, IC 95 % 0.65–0.86), p < 0.001",
+     "valor": "Compuesto de muerte cardiovascular o primera hospitalización por insuficiencia cardíaca",
+     "correcta": false
+    }
+   ],
+   "explicacion": "EMPA-REG OUTCOME (2015), eca. Reducción relativa del 38 % (HR 0.62, IC 95 % 0.49–0.77), p < 0.001",
+   "ref": "pmid:26378978"
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-certeza-0",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Amlodipino en la hipertensión arterial esencial», ¿qué certeza GRADE tiene el desenlace «Ictus mortal y no mortal a 5.5 años»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 23 % frente a pauta basada en atenolol (HR 0.77, IC 95 % 0.66–0.89), p = 0.0003.",
+   "ref": "pmid:16154016"
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-certeza-1",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Amlodipino en la hipertensión arterial esencial», ¿qué certeza GRADE tiene el desenlace «Mortalidad por todas las causas a 5.5 años»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Reducción relativa del 11 % frente a pauta basada en betabloqueante (HR 0.89, IC 95 % 0.81–0.99), p = 0.025.",
+   "ref": "pmid:16154016"
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-certeza-2",
+   "tipo": "certeza_grade",
+   "enunciado": "En «Amlodipino en la hipertensión arterial esencial», ¿qué certeza GRADE tiene el desenlace «Enfermedad coronaria mortal o infarto de miocardio no mortal a 4.9 años»?",
+   "opciones": [
+    {
+     "texto": "Alta",
+     "valor": "alta",
+     "correcta": true
+    },
+    {
+     "texto": "Baja",
+     "valor": "baja",
+     "correcta": false
+    },
+    {
+     "texto": "Moderada",
+     "valor": "moderada",
+     "correcta": false
+    },
+    {
+     "texto": "Muy baja",
+     "valor": "muy_baja",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Certeza alta. Efecto: Eficacia equivalente a clortalidona (RR 0.98, IC 95 % 0.90–1.07), p = 0.65.",
+   "ref": "pmid:12479763"
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-direccion",
+   "tipo": "recomendacion",
+   "enunciado": "¿En qué sentido va la recomendación de «Amlodipino en la hipertensión arterial esencial»?",
+   "opciones": [
+    {
+     "texto": "A favor de la intervención",
+     "valor": "a_favor",
+     "correcta": true
+    },
+    {
+     "texto": "En contra de la intervención",
+     "valor": "en_contra",
+     "correcta": false
+    },
+    {
+     "texto": "Sin recomendación en ningún sentido",
+     "valor": "ninguna",
+     "correcta": false
+    }
+   ],
+   "explicacion": "Se recomienda Amlodipino (5 a 10 mg/día) como una de las opciones de primera línea en monoterapia o en combinación con IECA/ARA-II para el control de la hipertensión arterial esencial y la reducción de eventos cerebrovasculares."
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-fuerza",
+   "tipo": "fuerza",
+   "enunciado": "¿Con qué fuerza se recomienda lo que propone «Amlodipino en la hipertensión arterial esencial»?",
+   "opciones": [
+    {
+     "texto": "Condicional",
+     "valor": "condicional",
+     "correcta": false
+    },
+    {
+     "texto": "Fuerte",
+     "valor": "fuerte",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Certeza global alta. Se recomienda Amlodipino (5 a 10 mg/día) como una de las opciones de primera línea en monoterapia o en combinación con IECA/ARA-II para el control de la hipertensión arterial esencial y la reducción de eventos cerebrovasculares."
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-semaforo",
+   "tipo": "semaforo",
+   "enunciado": "¿Cuál es la calificación semafórica de la decisión clínica en «Amlodipino en la hipertensión arterial esencial»?",
+   "opciones": [
+    {
+     "texto": "Amarillo (Condicional / segunda línea o beneficio modesto)",
+     "valor": "amarillo",
+     "correcta": false
+    },
+    {
+     "texto": "Rojo (No recomendado / balance desfavorable)",
+     "valor": "rojo",
+     "correcta": false
+    },
+    {
+     "texto": "Verde (Elección preferente / beneficio neto demostrado)",
+     "valor": "verde",
+     "correcta": true
+    }
+   ],
+   "explicacion": "Semáforo VERDE. Perla: Antihipertensivo de primera línea con control tensional suave y prolongado (24 h) en toma única. Especialmente eficaz en ancianos, personas de raza negra e hipertensión sistólica aislada. Reduce eventos cardiovasculares mayores e ictus (NNT 100 a 5.5 años)."
+  },
+  {
+   "ficha": "FT:0008",
+   "url": "fichas/FT0008-amlodipino-hipertension-arterial-esencial.html",
+   "dci": "Amlodipino",
+   "atc": "C08CA01",
+   "lme_seccion": "12.3",
+   "indicacion": "Hipertensión arterial esencial del adulto",
+   "id": "FT:0008-efecto",
+   "tipo": "efecto",
+   "enunciado": "En «Amlodipino en la hipertensión arterial esencial», ¿qué efecto se midió para «Mortalidad por todas las causas a 5.5 años»?",
+   "opciones": [
+    {
+     "texto": "Reducción relativa del 11 % frente a pauta basada en betabloqueante (HR 0.89, IC 95 % 0.81–0.99), p = 0.025",
+     "valor": "Mortalidad por todas las causas a 5.5 años",
+     "correcta": true
+    },
+    {
+     "texto": "Eficacia equivalente a clortalidona (RR 0.98, IC 95 % 0.90–1.07), p = 0.65",
+     "valor": "Enfermedad coronaria mortal o infarto de miocardio no mortal a 4.9 años",
+     "correcta": false
+    },
+    {
+     "texto": "Reducción relativa del 23 % frente a pauta basada en atenolol (HR 0.77, IC 95 % 0.66–0.89), p = 0.0003",
+     "valor": "Ictus mortal y no mortal a 5.5 años",
+     "correcta": false
+    }
+   ],
+   "explicacion": "ASCOT-BPLA (2005), eca. Reducción relativa del 11 % frente a pauta basada en betabloqueante (HR 0.89, IC 95 % 0.81–0.99), p = 0.025",
+   "ref": "pmid:16154016"
+  }
+ ]
+}

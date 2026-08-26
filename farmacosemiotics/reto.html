@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reto Clínico — farmacosemiotics — farmacosemiotics</title>
+<meta name="description" content="Preguntas derivadas de las fichas, con enlace a la fuente.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600&family=Literata:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="estilo.css?v=4">
+
+</head>
+<body>
+<div class="envoltorio">
+<header class="ghost-header">
+  <nav class="ghost-nav-left">
+    <a href="index.html" class="ghost-nav-item">Home</a>
+    <a href="blog.html" class="ghost-nav-item">Indice</a>
+    <a href="reto.html" class="ghost-nav-item">Reto</a>
+    <a href="https://powersemiotics.com/" class="ghost-nav-item">About</a>
+  </nav>
+  <div class="ghost-logo">
+    <a href="index.html">farmacosemiotics</a>
+  </div>
+  <div class="ghost-nav-right">
+    <button class="ghost-search-btn" onclick="document.getElementById('q')?document.getElementById('q').focus():window.location.href='blog.html'" aria-label="Buscar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    </button>
+  </div>
+</header>
+<div class="ghost-section-header" style="margin-top:20px">
+  <span class="ghost-section-title">🎯 RETO CLÍNICO & AUTOEVALUACIÓN</span>
+</div>
+<div id="reto"></div>
+<script>
+let BANCO=[],i=0,aciertos=0;
+function baraja(a){for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]];}return a;}
+function pinta(){
+  if(i>=BANCO.length){
+    document.getElementById('reto').innerHTML=
+      '<h2>Resultado</h2><p>'+aciertos+' de '+BANCO.length+'.</p>'+
+      '<button class="boton" onclick="location.reload()">Otra vuelta</button>';
+    return;
+  }
+  const p=BANCO[i];
+  document.getElementById('reto').innerHTML=
+    '<div class="meta ref">'+(i+1)+' / '+BANCO.length+' · '+p.tipo.replace(/_/g,' ')+'</div>'+
+    '<h3>'+p.enunciado+'</h3>'+
+    '<div id="ops">'+baraja(p.opciones.slice()).map((o,n)=>
+      '<button class="opcion" data-n="'+n+'" data-ok="'+(o.correcta?1:0)+'">'+
+      o.texto+'</button>').join('')+'</div>'+
+    '<div id="tras"></div>';
+  document.getElementById('ops').addEventListener('click',ev=>{
+    const b=ev.target.closest('.opcion'); if(!b) return;
+    const ok=b.dataset.ok==='1';
+    if(ok) aciertos++;
+    document.querySelectorAll('.opcion').forEach(x=>{
+      x.disabled=true;
+      if(x.dataset.ok==='1') x.classList.add('bien');
+      else if(x===b) x.classList.add('mal');
+    });
+    document.getElementById('tras').innerHTML=
+      '<div class="recuadro'+(ok?'':' peligro')+'"><span class="rotulo">'+
+      (ok?'Correcto':'Incorrecto')+'</span><p>'+p.explicacion+'</p>'+
+      '<p><a href="'+p.url+'">Ir a la ficha que lo sostiene</a></p></div>'+
+      '<button class="boton" id="sig">Siguiente</button>';
+    document.getElementById('sig').onclick=()=>{i++;pinta();};
+  },{once:false});
+}
+fetch('reto.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  BANCO=baraja(d.preguntas.slice());pinta();
+}).catch(()=>{
+  document.getElementById('reto').innerHTML=
+    '<p class="sub">No se pudo cargar reto.json. Genéralo con '+
+    '<code>python scripts/reto.py</code>.</p>';
+});
+</script>
+<div class="pie">
+<p>Material educativo. No sustituye el juicio clínico ni la ficha técnica aprobada por la agencia reguladora del lugar de uso.</p>
+<p>Contenido bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Generado desde los YAML de <a href="https://github.com/alcyedmundo281/farmacosemiotics">farmacosemiotics</a>; cada cifra lleva su PMID en el propio registro.</p>
+<p>Parte de <a href="https://powersemiotics.com/">Powersemiotics</a>, junto a <a href="https://powersemiotics.com/biosemiotics/">biosemiotics</a> y <a href="https://powersemiotics.com/medsemiotics/">medsemiotics</a>.</p>
+</div>
+</div>
+</body>
+</html>
