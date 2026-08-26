@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía Técnica: Ibrutinib en Linfoma de Células del Manto</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/ibrutinib.html" />
+    <style>
+        :root {
+            --primary: #004a99;
+            --secondary: #0072bc;
+            --accent: #f39c12;
+            --danger: #c0392b;
+            --success: #27ae60;
+            --warning: #f1c40f;
+            --light: #f4f7f6;
+            --dark: #2c3e50;
+            --border: #dcdde1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .infographic-container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .category-tag {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        h1 { margin: 0; font-size: 26px; color: var(--primary); }
+        .subtitle { color: #7f8c8d; font-size: 16px; margin-top: 5px; }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .info-card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .wide { grid-column: 1 / -1; }
+
+        h2 {
+            font-size: 17px;
+            margin-top: 0;
+            color: var(--secondary);
+            text-transform: uppercase;
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        .metrics-display {
+            display: flex;
+            justify-content: space-around;
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .metric-point { text-align: center; }
+        .metric-num { display: block; font-size: 24px; font-weight: 800; color: var(--primary); }
+        .metric-desc { font-size: 11px; color: #636e72; text-transform: uppercase; font-weight: 600; }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .data-table th { background: #f8f9fa; text-align: left; }
+        .data-table td, .data-table th { border: 1px solid var(--border); padding: 12px; }
+
+        .financial-banner {
+            background: linear-gradient(135deg, var(--danger) 0%, #e74c3c 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .financial-banner .total-amount { font-size: 22px; font-weight: 800; display: block; }
+
+        .recommendation-summary {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fff9db;
+            border: 1px solid #ffe066;
+        }
+
+        .traffic-light-dot {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--warning);
+            margin-right: 15px;
+            box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+        }
+
+        .safety-warning {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #c0392b;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #95a5a6;
+            text-align: justify;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .esmo-tag {
+            background: #34495e;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="infographic-container">
+    <header>
+        <div class="category-tag">Hemato-Oncología | Inhibidor de BTK</div>
+        <h1>Ibrutinib (Imbruvica®)</h1>
+        <div class="subtitle">Tratamiento del Linfoma de Células del Manto (LCM) Recaída/Refractario</div>
+    </header>
+
+    <div class="section-grid">
+        <div class="info-card">
+            <h2>Eficacia (Ensayo RAY - Fase III)</h2>
+            <div class="metrics-display">
+                <div class="metric-point">
+                    <span class="metric-num">14.6 m</span>
+                    <span class="metric-desc">SLP Ibrutinib</span>
+                </div>
+                <div class="metric-point">
+                    <span class="metric-num">6.2 m</span>
+                    <span class="metric-desc">SLP Temsirolimus</span>
+                </div>
+                <div class="metric-point">
+                    <span class="metric-num">0.43</span>
+                    <span class="metric-desc">Hazard Ratio</span>
+                </div>
+            </div>
+            <p style="font-size: 13px;">
+                <strong>Resultado:</strong> Ibrutinib mejora significativamente la supervivencia libre de progresión (SLP) y la tasa de respuesta objetiva (72% vs 40%).
+                <br><strong>Valor Clínico:</strong> <span class="esmo-tag">ESMO-MCBS ≥ 4</span> (Beneficio sustancial).
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2>Perfil de Seguridad y Riesgos</h2>
+            <ul style="font-size: 13px; padding-left: 20px; margin-bottom: 0;">
+                <li><strong>Hemorragias:</strong> Riesgo elevado que requiere vigilancia.</li>
+                <li><strong>Fibrilación Auricular:</strong> Toxicidad cardiovascular común.</li>
+                <li><strong>Diarrea e Infecciones:</strong> Reacciones adversas de alta frecuencia.</li>
+            </ul>
+            <div class="safety-warning">
+                ⚠️ <strong>Nota:</strong> No se considera más seguro que los esquemas del CNMB; presenta riesgos cardiovasculares y hemorrágicos específicos.
+            </div>
+        </div>
+
+        <div class="info-card wide">
+            <h2>Sostenibilidad Financiera (Ecuador / RPIS)</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Parámetro de Evaluación</th>
+                        <th>Ibrutinib (Monoterapia)</th>
+                        <th>Quimio-Inmunoterapia (CNMB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Costo Anual Paciente</strong></td>
+                        <td>$148,058.60 USD</td>
+                        <td>~$15,000.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beneficio Incremental</strong></td>
+                        <td>0.8 AVACs (QALYs)</td>
+                        <td>Referencia</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio Techo de Negociación</strong></td>
+                        <td>$22.13 USD / cápsula</td>
+                        <td>Descuento requerido: ~78%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="financial-banner">
+                IMPACTO PRESUPUESTARIO PROYECTADO (5 AÑOS):
+                <span class="total-amount">$14,805,860.00 USD</span>
+            </div>
+            <p style="font-size: 12px; margin-top: 10px; text-align: center; color: #7f8c8d;">
+                *Cálculo basado en una cohorte estimada de 20 pacientes anuales en la Red Pública Integral de Salud (RPIS).
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h2>Conveniencia y Adherencia</h2>
+            <ul style="font-size: 13px; padding-left: 20px;">
+                <li><strong>Vía de Administración:</strong> Oral diaria continua.</li>
+                <li><strong>Impacto Logístico:</strong> Evita infusiones IV, pero requiere monitoreo cardiovascular estricto.</li>
+                <li><strong>Barreras:</strong> La polifarmacia y el acceso geográfico en zonas rurales pueden comprometer la adherencia.</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h2>Dictamen de Evaluación</h2>
+            <div class="recommendation-summary">
+                <div class="traffic-light-dot"></div>
+                <div>
+                    <strong style="color: #856404; font-size: 15px;">RECOMENDACIÓN: AMARILLO</strong>
+                    <p style="font-size: 11px; margin-top: 4px; color: #856404;">
+                        Inclusión condicionada a un <strong>Acuerdo de Riesgo Compartido (MEA)</strong> vinculado a resultados clínicos y una reducción drástica de precio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <strong>Bibliografía principal:</strong> Ensayo RAY (Lancet 2016); Roufarshbaf et al. (2022); Guías ESMO 2017; NICE TA502; CNMB 11va Revisión.
+    </footer>
+</div>
+
+</body>
+</html>

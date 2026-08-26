@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Pomalidomida en Mieloma Múltiple</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/pomalidomida.html" />
+    <style>
+        :root {
+            --primary: #4834d4;
+            --secondary: #686de0;
+            --accent: #f0932b;
+            --success: #6ab04c;
+            --danger: #eb4d4b;
+            --warning: #f9ca24;
+            --light: #f9f9ff;
+            --dark: #130f40;
+            --border: #dcdde1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .badge-indication {
+            background: var(--primary);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        h1 { margin: 0; font-size: 28px; color: var(--dark); }
+        .sub { font-size: 16px; color: #535c68; margin-top: 5px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .full { grid-column: 1 / -1; }
+
+        h2 {
+            font-size: 16px;
+            margin-top: 0;
+            color: var(--primary);
+            text-transform: uppercase;
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        .metric-container {
+            display: flex;
+            justify-content: space-around;
+            background: var(--light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .metric-item { text-align: center; }
+        .metric-val { display: block; font-size: 26px; font-weight: 800; color: var(--primary); }
+        .metric-label { font-size: 11px; color: #535c68; text-transform: uppercase; font-weight: 600; }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .price-table th { background: #f1f2f6; text-align: left; }
+        .price-table td, .price-table th { border: 1px solid var(--border); padding: 12px; }
+
+        .impact-banner {
+            background: linear-gradient(135deg, var(--danger) 0%, #ff7979 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .impact-banner .amount { font-size: 24px; font-weight: 800; display: block; }
+
+        .status-box {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            background: #fffbe6;
+            border: 1px solid #ffe58f;
+        }
+
+        .traffic-light {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--warning);
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(249, 202, 36, 0.5);
+        }
+
+        .alert-note {
+            background: #fff1f0;
+            border: 1px solid #ffa39e;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #cf1322;
+            margin-top: 15px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #95a5a6;
+            text-align: justify;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .tag-mcbs {
+            background: var(--dark);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="badge-indication">Hematología - 3ra Línea o Superior</div>
+        <h1>Pomalidomida (Inhibidor de la vía PD-1/L1)</h1>
+        <div class="sub">Mieloma Múltiple Refractario | ATC: L04AX06</div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Eficacia (Estudio MM-003)</h2>
+            <div class="metric-container">
+                <div class="metric-item">
+                    <span class="metric-val">4.0 m</span>
+                    <span class="metric-label">SLP Pomalidomida</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">1.9 m</span>
+                    <span class="metric-label">SLP Dexametasona</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">0.41</span>
+                    <span class="metric-label">Hazard Ratio</span>
+                </div>
+            </div>
+            <p style="font-size: 13px;">
+                <strong>Resultado:</strong> Mejora significativa en supervivencia libre de progresión frente a dosis altas de dexametasona.
+                <br><strong>Score Clínico:</strong> <span class="tag-mcbs">ESMO-MCBS ≥ 4</span> (Beneficio sustancial).
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Seguridad y Alertas</h2>
+            <ul style="font-size: 13px; padding-left: 20px; margin-bottom: 0;">
+                <li><strong>Neutropenia (G3-4):</strong> Muy común, requiere monitoreo.</li>
+                <li><strong>Riesgo Vascular:</strong> Alto riesgo de tromboembolismo venoso.</li>
+                <li><strong>Neoplasias:</strong> Riesgo de segundas neoplasias primarias.</li>
+            </ul>
+            <div class="alert-note">
+                ⚠️ <strong>Alerta de Seguridad:</strong> No es más seguro que las alternativas del CNMB; requiere profilaxis antitrombótica obligatoria.
+            </div>
+        </div>
+
+        <div class="card full">
+            <h2>Análisis de Sostenibilidad Económica (Ecuador)</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Parámetro</th>
+                        <th>Pomalidomida (Intervención)</th>
+                        <th>Dexametasona (CNMB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Costo Anual Paciente</strong></td>
+                        <td>$132,405.00 USD</td>
+                        <td>$156.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio Techo Sugerido</strong></td>
+                        <td>$58.80 / cápsula</td>
+                        <td>Descuento requerido: ~88%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="impact-banner">
+                IMPACTO PRESUPUESTARIO PROYECTADO (5 AÑOS):
+                <span class="amount">$39,721,500.00 USD</span>
+            </div>
+            <p style="font-size: 12px; margin-top: 10px; text-align: center; color: #535c68;">
+                *Cálculo basado en una cohorte estimada de 60 pacientes anuales en la Red Pública Integral de Salud (RPIS).
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Conveniencia y Adherencia</h2>
+            <ul style="font-size: 13px; padding-left: 20px;">
+                <li><strong>Vía:</strong> Oral (Facilita logística ambulatoria).</li>
+                <li><strong>Esquema:</strong> 21 días de tratamiento / 7 días descanso.</li>
+                <li><strong>Barreras:</strong> La toxicidad hematológica severa requiere visitas hospitalarias frecuentes para control.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Dictamen Final</h2>
+            <div class="status-box">
+                <div class="traffic-light"></div>
+                <div>
+                    <strong style="color: #856404; font-size: 15px;">RECOMENDACIÓN: AMARILLO</strong>
+                    <p style="font-size: 11px; margin-top: 4px; color: #856404;">
+                        Inclusión condicionada a <strong>Acuerdo de Riesgo Compartido (MEA)</strong> o negociación agresiva de precios para mitigar el impacto presupuestario negativo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <strong>Bibliografía principal:</strong> San Miguel J, et al. MM-003 Trial (Lancet Oncol 2013); EHA-ESMO Guidelines 2021; NICE TA427; Sismed 2024.
+    </footer>
+</div>
+
+</body>
+</html>

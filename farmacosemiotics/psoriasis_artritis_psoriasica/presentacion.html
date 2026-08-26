@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentación: Tratamiento Racional de la Psoriasis</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/psoriasis_artritis_psoriasica/presentacion.html" />
+
+    <!-- Tailwind CSS -->
+    <!-- Google Fonts: Inter -->
+    <!-- Chart.js para gráficos -->
+    <script src="../../assets/vendor/chartjs/chart.umd.min.js"></script>
+
+    <!-- Iconos (Lucide) - CORREGIDO -->
+    <script src="../../assets/vendor/lucide/lucide-1.31.0.umd.min.js"></script>
+
+    <link href="../../assets/tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans p-4">
+    <div class="slideshow-wrapper">
+      <div class="slideshow-container bg-white rounded-xl shadow-2xl">
+        <!-- Slide 1: Título -->
+        <div
+          class="slide p-8 md:p-16 bg-gray-900 text-white"
+          style="
+            background-image:
+              linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)),
+              url('../../assets/images/placeholder-dna-1600x900.svg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="slide-content text-center">
+            <p class="text-blue-300 font-semibold mb-4 text-lg">
+              Una Guía para Clínicos y Pacientes
+            </p>
+            <h1
+              class="text-4xl md:text-6xl font-black tracking-tight leading-tight mb-6"
+            >
+              Farmacoterapia Racional de la Psoriasis
+            </h1>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+              Navegando el arsenal terapéutico moderno con eficacia, seguridad y
+              costo-efectividad.
+            </p>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Dar la bienvenida y presentar el objetivo: aplicar los
+                principios de la terapia racional al manejo de la psoriasis.
+              </li>
+              <li>
+                Enfatizar que la sesión busca equilibrar la innovación con la
+                práctica clínica diaria y la sostenibilidad.
+              </li>
+              <li>
+                Pregunta interactiva: ¿Cuál es el mayor desafío que enfrentan al
+                tratar la psoriasis hoy en día? (Costo, comorbilidades,
+                adherencia, etc.)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 2: Los 4 Pilares -->
+        <div class="slide">
+          <div class="slide-content">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-12 text-center gradient-text"
+            >
+              Los 4 Pilares de la Terapia Racional (OMS)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+              <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                <i
+                  data-lucide="target"
+                  class="h-16 w-16 mx-auto text-green-600 mb-4"
+                ></i>
+                <h3 class="text-2xl font-bold text-gray-800">Eficacia</h3>
+                <p class="text-gray-600 mt-2">
+                  ¿Alcanza los objetivos clínicos (PASI 90/100)?
+                </p>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                <i
+                  data-lucide="shield-check"
+                  class="h-16 w-16 mx-auto text-red-600 mb-4"
+                ></i>
+                <h3 class="text-2xl font-bold text-gray-800">Seguridad</h3>
+                <p class="text-gray-600 mt-2">
+                  ¿Cuál es el perfil de efectos adversos a corto y largo plazo?
+                </p>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                <i
+                  data-lucide="calendar-check"
+                  class="h-16 w-16 mx-auto text-blue-600 mb-4"
+                ></i>
+                <h3 class="text-2xl font-bold text-gray-800">Conveniencia</h3>
+                <p class="text-gray-600 mt-2">
+                  ¿Cómo afecta la adherencia (vía, frecuencia)?
+                </p>
+              </div>
+              <div class="flex flex-col items-center p-6 bg-gray-50 rounded-lg">
+                <i
+                  data-lucide="coins"
+                  class="h-16 w-16 mx-auto text-yellow-600 mb-4"
+                ></i>
+                <h3 class="text-2xl font-bold text-gray-800">Costo</h3>
+                <p class="text-gray-600 mt-2">
+                  ¿Es costo-efectivo para el paciente y el sistema?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Explicar que estos 4 pilares son la base para cualquier decisión
+                de prescripción, según la OMS.
+              </li>
+              <li>
+                Subrayar que el "costo" no se refiere solo al precio del
+                fármaco, sino al valor global (costos directos e indirectos).
+              </li>
+              <li>
+                La mejor elección es la que equilibra estos cuatro factores para
+                un paciente individual.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 3: La Jerarquía de Tratamiento -->
+        <div class="slide">
+          <div class="slide-content">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-8 text-center gradient-text"
+            >
+              Jerarquía de Valor Terapéutico
+            </h2>
+            <div class="space-y-4 max-w-4xl mx-auto">
+              <div
+                class="p-4 bg-green-100 border-l-4 border-green-500 rounded-r-lg"
+              >
+                <h3 class="font-bold text-green-800 text-lg">
+                  Nivel 1: Alto Valor, Bajo Costo (Fundamentales)
+                </h3>
+                <p class="text-green-700">
+                  Tópicos (corticoides, vit. D), Fototerapia, Metotrexato. Base
+                  del tratamiento racional.
+                </p>
+              </div>
+              <div
+                class="p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-r-lg"
+              >
+                <h3 class="font-bold text-yellow-800 text-lg">
+                  Nivel 2: Valor Selectivo (De Nicho)
+                </h3>
+                <p class="text-yellow-700">
+                  Ciclosporina (rescate), Acitretina (pustular), Apremilast
+                  (oral moderado).
+                </p>
+              </div>
+              <div
+                class="p-4 bg-blue-100 border-l-4 border-blue-500 rounded-r-lg"
+              >
+                <h3 class="font-bold text-blue-800 text-lg">
+                  Nivel 3: Alto Valor, Alto Costo (Estándar Refractario)
+                </h3>
+                <p class="text-blue-700">
+                  Biológicos (Anti-TNF, Anti-IL). Máxima eficacia. El valor
+                  aumenta con biosimilares.
+                </p>
+              </div>
+              <div
+                class="p-4 bg-red-100 border-l-4 border-red-500 rounded-r-lg"
+              >
+                <h3 class="font-bold text-red-800 text-lg">
+                  Nivel 4: Valor Restringido (Limitado por Seguridad)
+                </h3>
+                <p class="text-red-700">
+                  Inhibidores de JAK. Alta eficacia oral, pero con advertencias
+                  de seguridad significativas.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Presentar este modelo como un "mapa de ruta" para el
+                tratamiento, no una escalera rígida.
+              </li>
+              <li>
+                Explicar el concepto de "valor" como una combinación de
+                eficacia, seguridad y costo.
+              </li>
+              <li>
+                El objetivo es empezar con el nivel más alto de valor (Nivel 1)
+                y escalar según la necesidad clínica.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 4: Comparativa de Eficacia -->
+        <div class="slide">
+          <div class="slide-content">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-6 text-center gradient-text"
+            >
+              Comparativa de Eficacia (PASI 90)
+            </h2>
+            <p class="text-center text-gray-600 mb-8">
+              Porcentaje aproximado de pacientes que alcanzan una mejora del 90%
+              en la piel.
+            </p>
+            <div class="w-full h-3/4 flex justify-center items-center">
+              <canvas id="efficacyChart"></canvas>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Este gráfico ilustra el "techo de eficacia" de cada clase de
+                fármaco.
+              </li>
+              <li>
+                Destacar la brecha significativa entre los FAMEc y los
+                biológicos, especialmente los inhibidores de interleucinas.
+              </li>
+              <li>
+                Esto justifica el alto costo de los biológicos: compramos una
+                mayor probabilidad de aclaramiento casi total de la piel.
+              </li>
+              <li>
+                Mencionar que el PASI 90 es el estándar de oro actual en ensayos
+                clínicos.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 5: La Revolución Biológica -->
+        <div class="slide">
+          <div class="slide-content">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-6 text-center gradient-text"
+            >
+              Nivel 3: La Revolución Biológica
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div class="text-center">
+                <div
+                  class="video-container bg-black rounded-lg overflow-hidden shadow-lg"
+                >
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube-nocookie.com/embed/aYNgLQNpA6E"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">
+                  Mecanismo de Acción de un Anti-IL-17.
+                </p>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                  Nuevos Techos de Eficacia
+                </h3>
+                <ul class="space-y-4 text-gray-700">
+                  <li class="flex items-start">
+                    <i
+                      data-lucide="dna"
+                      class="h-6 w-6 mr-3 text-blue-600 flex-shrink-0 mt-1"
+                    ></i>
+                    <div>
+                      <span class="font-semibold text-blue-700">Anti-TNF:</span>
+                      Opción "todoterreno" para piel y articulaciones. El valor
+                      aumenta drásticamente con los biosimilares.
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      data-lucide="zap"
+                      class="h-6 w-6 mr-3 text-purple-600 flex-shrink-0 mt-1"
+                    ></i>
+                    <div>
+                      <span class="font-semibold text-purple-700"
+                        >Anti-IL-17/IL-23:</span
+                      >
+                      Máxima eficacia para el aclaramiento cutáneo (PASI
+                      90/100). Perfil de seguridad favorable.
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <i
+                      data-lucide="alert-triangle"
+                      class="h-6 w-6 mr-3 text-red-600 flex-shrink-0 mt-1"
+                    ></i>
+                    <div>
+                      <span class="font-bold text-red-700">Desafío:</span> El
+                      principal desafío sigue siendo su elevado costo y el
+                      acceso equitativo.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Reproducir el video para explicar visualmente el mecanismo de
+                acción.
+              </li>
+              <li>
+                Explicar que estos fármacos no son "curas", sino tratamientos
+                crónicos que bloquean vías inflamatorias específicas.
+              </li>
+              <li>
+                La elección entre clases depende del fenotipo (piel vs.
+                articulación) y comorbilidades (ej. EII).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 6: Manejo de APs -->
+        <div class="slide">
+          <div class="slide-content">
+            <h2
+              class="text-3xl md:text-5xl font-bold mb-8 text-center gradient-text"
+            >
+              Manejo Estratificado de la Artritis Psoriásica
+            </h2>
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+              <p class="text-center text-gray-600 mb-6">
+                El tratamiento se elige según el dominio clínico predominante y
+                las comorbilidades.
+              </p>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center"
+              >
+                <div
+                  class="bg-white p-4 rounded-lg border-t-4 border-pink-500 shadow-sm"
+                >
+                  <h4 class="font-bold text-pink-600">Piel Predominante</h4>
+                  <p class="text-sm text-gray-700 mt-2">
+                    Inhibidores de IL-17 o IL-23
+                  </p>
+                </div>
+                <div
+                  class="bg-white p-4 rounded-lg border-t-4 border-indigo-500 shadow-sm"
+                >
+                  <h4 class="font-bold text-indigo-600">Enfermedad Axial</h4>
+                  <p class="text-sm text-gray-700 mt-2">
+                    Inhibidores de TNF o IL-17
+                  </p>
+                </div>
+                <div
+                  class="bg-white p-4 rounded-lg border-t-4 border-teal-500 shadow-sm"
+                >
+                  <h4 class="font-bold text-teal-600">Uveítis / EII</h4>
+                  <p class="text-sm text-gray-700 mt-2">Anti-TNF Monoclonal</p>
+                </div>
+                <div
+                  class="bg-white p-4 rounded-lg border-t-4 border-amber-500 shadow-sm"
+                >
+                  <h4 class="font-bold text-amber-600">Artritis Periférica</h4>
+                  <p class="text-sm text-gray-700 mt-2">
+                    Cualquier FAMEb o FAMEts
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>
+                Enfatizar el concepto de "terapia estratificada": no hay un
+                fármaco único para todos.
+              </li>
+              <li>
+                Explicar el "desacoplamiento": un fármaco excelente para la piel
+                (ej. Anti-IL-23) puede no ser la mejor opción para la afectación
+                axial.
+              </li>
+              <li>
+                La presencia de EII o uveítis es un factor decisivo que inclina
+                la balanza hacia los Anti-TNF.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 7: Conclusión -->
+        <div
+          class="slide p-8 md:p-16 bg-gray-900 text-white"
+          style="
+            background-image:
+              linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.95)),
+              url('../../assets/images/placeholder-rx-1600x900.svg');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="slide-content text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">
+              Conclusiones para una Terapia Racional
+            </h2>
+            <div
+              class="text-gray-200 text-lg max-w-4xl mx-auto space-y-4 text-left"
+            >
+              <p class="flex items-start">
+                <i
+                  data-lucide="git-commit"
+                  class="h-6 w-6 mr-3 text-blue-400 flex-shrink-0 mt-1"
+                ></i
+                ><span
+                  ><b class="text-blue-300">Enfoque Escalonado:</b> Iniciar con
+                  terapias de alto valor y bajo costo (tópicos, fototerapia,
+                  MTX).</span
+                >
+              </p>
+              <p class="flex items-start">
+                <i
+                  data-lucide="users"
+                  class="h-6 w-6 mr-3 text-blue-400 flex-shrink-0 mt-1"
+                ></i
+                ><span
+                  ><b class="text-blue-300">Decisión Compartida:</b>Alinear los
+                  objetivos del paciente con las opciones terapéuticas
+                  realistas.</span
+                >
+              </p>
+              <p class="flex items-start">
+                <i
+                  data-lucide="microscope"
+                  class="h-6 w-6 mr-3 text-blue-400 flex-shrink-0 mt-1"
+                ></i
+                ><span
+                  ><b class="text-blue-300">Estratificar Biológicos:</b> Elegir
+                  la terapia dirigida según el fenotipo clínico y las
+                  comorbilidades.</span
+                >
+              </p>
+              <p class="flex items-start">
+                <i
+                  data-lucide="repeat"
+                  class="h-6 w-6 mr-3 text-blue-400 flex-shrink-0 mt-1"
+                ></i
+                ><span
+                  ><b class="text-blue-300">Adoptar Biosimilares:</b> Son clave
+                  para mejorar el acceso y la costo-efectividad de las terapias
+                  de alta eficacia.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="speaker-notes">
+            <h4 class="font-bold text-yellow-300 mb-2">Notas del Orador:</h4>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+              <li>Resumir los puntos clave: no hay una "bala de plata".</li>
+              <li>
+                La prescripción racional es un arte que combina ciencia,
+                experiencia y comunicación.
+              </li>
+              <li>Abrir la sesión para preguntas y discusión.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+      </div>
+
+      <!-- Controles y Puntos de navegación -->
+      <div class="controls-container mt-4 rounded-lg shadow-lg">
+        <div class="flex justify-between items-center">
+          <button
+            id="notes-toggle"
+            class="text-white text-xs sm:text-sm py-2 px-4 rounded-md bg-gray-700 hover:bg-gray-600 transition-colors flex items-center"
+          >
+            <i data-lucide="file-text" class="h-4 w-4 mr-2"></i>
+            Notas (N)
+          </button>
+          <div class="dot-container">
+            <!-- Los puntos se generarán con JS -->
+          </div>
+          <div class="w-24"></div>
+          <!-- Espaciador -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      let efficacyChartInstance = null;
+
+      window.onload = function () {
+        createDots();
+        showSlides(slideIndex);
+        lucide.createIcons();
+
+        const notesToggle = document.getElementById('notes-toggle');
+        const slideshowContainer = document.querySelector(
+          '.slideshow-container',
+        );
+        notesToggle.addEventListener('click', () => {
+          slideshowContainer.classList.toggle('show-notes');
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key.toLowerCase() === 'n') {
+            slideshowContainer.classList.toggle('show-notes');
+          } else if (event.key === 'ArrowRight') {
+            moveSlide(1);
+          } else if (event.key === 'ArrowLeft') {
+            moveSlide(-1);
+          }
+        });
+      };
+
+      function createDots() {
+        const slides = document.getElementsByClassName('slide');
+        const dotContainer = document.querySelector('.dot-container');
+        dotContainer.innerHTML = '';
+        for (let i = 0; i < slides.length; i++) {
+          const dot = document.createElement('span');
+          dot.classList.add('dot');
+          dot.setAttribute('onclick', `currentSlide(${i + 1})`);
+          dotContainer.appendChild(dot);
+        }
+      }
+
+      function moveSlide(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName('slide');
+        let dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        if (slides.length > 0) {
+          const currentSlideElement = slides[slideIndex - 1];
+          currentSlideElement.style.display = 'block';
+          dots[slideIndex - 1].className += ' active';
+
+          // Lógica para crear o destruir el gráfico
+          const chartCanvas = document.getElementById('efficacyChart');
+          if (chartCanvas && currentSlideElement.contains(chartCanvas)) {
+            createEfficacyChart();
+          } else {
+            if (efficacyChartInstance) {
+              efficacyChartInstance.destroy();
+              efficacyChartInstance = null;
+            }
+          }
+        }
+      }
+
+      function createEfficacyChart() {
+        if (efficacyChartInstance) {
+          return;
+        }
+        const ctx = document.getElementById('efficacyChart').getContext('2d');
+        efficacyChartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [
+              'Metotrexato',
+              'Apremilast',
+              'Anti-TNF',
+              'Anti-IL-17',
+              'Anti-IL-23',
+            ],
+            datasets: [
+              {
+                label: '% de Pacientes con PASI 90',
+                data: [20, 25, 50, 75, 80], // Datos aproximados basados en el informe
+                backgroundColor: [
+                  'rgba(135, 206, 235, 0.6)', // SkyBlue
+                  'rgba(255, 215, 0, 0.6)', // Gold
+                  'rgba(255, 182, 193, 0.6)', // LightPink
+                  'rgba(144, 238, 144, 0.6)', // LightGreen
+                  'rgba(123, 104, 238, 0.6)', // MediumSlateBlue
+                ],
+                borderColor: [
+                  'rgba(135, 206, 235, 1)',
+                  'rgba(255, 215, 0, 1)',
+                  'rgba(255, 182, 193, 1)',
+                  'rgba(144, 238, 144, 1)',
+                  'rgba(123, 104, 238, 1)',
+                ],
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100,
+                ticks: {
+                  callback: function (value) {
+                    return value + '%';
+                  },
+                },
+              },
+            },
+            plugins: {
+              legend: {
+                display: false,
+              },
+              title: {
+                display: true,
+                text: 'Eficacia Comparativa de Clases Terapéuticas',
+                font: {
+                  size: 16,
+                },
+              },
+            },
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

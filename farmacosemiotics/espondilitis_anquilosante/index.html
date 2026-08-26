@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía Interactiva: Manejo de la Espondilitis Anquilosante</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/espondilitis_anquilosante/index.html" />
+    <script src="../../assets/vendor/chartjs/chart.umd.min.js"></script>
+
+    <link href="../../assets/tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans antialiased">
+    <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50">
+      <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <div class="flex-shrink-0">
+            <a href="../../index.html" class="text-xl font-bold accent-text"
+              >Guía EA</a
+            >
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="#inicio"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Inicio</a
+              >
+              <a
+                href="#diagnostico"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Diagnóstico</a
+              >
+              <a
+                href="#tratamiento"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Tratamiento</a
+              >
+              <a
+                href="#comparativa"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Comparativa</a
+              >
+              <a
+                href="#farmacoeconomia"
+                class="nav-link px-3 py-2 rounded-md text-sm font-medium"
+                >Farmacoeconomía</a
+              >
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md accent-text hover:bg-gray-200 focus:outline-none"
+            >
+              <span class="sr-only">Abrir menú principal</span>
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="md:hidden hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#inicio"
+            class="block nav-link px-3 py-2 rounded-md text-base font-medium"
+            >Inicio</a
+          >
+          <a
+            href="#diagnostico"
+            class="block nav-link px-3 py-2 rounded-md text-base font-medium"
+            >Diagnóstico</a
+          >
+          <a
+            href="#tratamiento"
+            class="block nav-link px-3 py-2 rounded-md text-base font-medium"
+            >Tratamiento</a
+          >
+          <a
+            href="#comparativa"
+            class="block nav-link px-3 py-2 rounded-md text-base font-medium"
+            >Comparativa</a
+          >
+          <a
+            href="#farmacoeconomia"
+            class="block nav-link px-3 py-2 rounded-md text-base font-medium"
+            >Farmacoeconomía</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <section id="inicio" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold accent-text mb-4">
+            Manejo Racional de la Espondilitis Anquilosante
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-700">
+            Una guía interactiva para explorar las estrategias terapéuticas
+            basadas en la evidencia, desde los fundamentos de la enfermedad
+            hasta las consideraciones farmacoeconómicas.
+          </p>
+        </div>
+
+        <!-- SECCIÓN DE RECURSOS CLAVE (NUEVA Y ACTUALIZADA) -->
+        <div
+          class="mb-12 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto"
+        >
+          <a
+            href="./presentacion.html"
+            target="_blank"
+            class="card flex items-center p-4 bg-white rounded-lg shadow-md border-l-4 accent-border"
+          >
+            <div class="flex-shrink-0 mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 accent-text"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg accent-text">Ver Presentación</h4>
+              <p class="text-sm text-gray-600">
+                Explore los conceptos clave en un formato de diapositivas
+                interactivas.
+              </p>
+            </div>
+          </a>
+          <a
+            href="../../assets/pdf/espondilitis_anquilosante_analisis_farmacoterapeutico_y_farmacoeconomico.pdf"
+            download
+            class="card flex items-center p-4 bg-white rounded-lg shadow-md border-l-4 secondary-accent-border"
+          >
+            <div class="flex-shrink-0 mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-12 w-12 secondary-accent-text"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-lg secondary-accent-text">
+                Descargar Informe PDF
+              </h4>
+              <p class="text-sm text-gray-600">
+                Obtenga el análisis farmacoterapéutico completo para una
+                revisión detallada.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-l-4 accent-border"
+          >
+            <h3 class="text-xl font-bold mb-3 accent-text">
+              ¿Qué es la Espondilitis Anquilosante (EA)?
+            </h3>
+            <p class="text-gray-800 leading-relaxed">
+              La EA es una enfermedad inflamatoria crónica que afecta
+              principalmente a las articulaciones de la columna vertebral y las
+              sacroilíacas. El proceso clave es la
+              <strong class="secondary-accent-text">entesitis</strong>, que
+              conduce a un dolor lumbar de tipo inflamatorio, rigidez y, en
+              etapas avanzadas, a la fusión de las vértebras.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-l-4 secondary-accent-border"
+          >
+            <h3 class="text-xl font-bold mb-3 secondary-accent-text">
+              El Eje Inmunológico Clave: HLA-B27/IL-23/IL-17
+            </h3>
+            <div class="flex flex-col space-y-2 text-center text-sm">
+              <div class="bg-gray-100 p-2 rounded-md">
+                <strong>Predisposición Genética (HLA-B27)</strong>
+              </div>
+              <div class="self-center">↓</div>
+              <div class="bg-green-100 p-2 rounded-md accent-text">
+                <strong>Eje IL-23 / IL-17</strong>
+              </div>
+              <div class="self-center">↓</div>
+              <div class="grid grid-cols-2 gap-2">
+                <div class="bg-red-100 p-2 rounded-md text-red-800">
+                  <strong>Inflamación/Destrucción Ósea</strong>
+                </div>
+                <div class="bg-blue-100 p-2 rounded-md text-blue-800">
+                  <strong>Neoformación Ósea (Anquilosis)</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnostico" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold accent-text mb-4">
+            Diagnóstico y Monitorización
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-700">
+            El diagnóstico temprano es clave. Los criterios ASAS de 2009
+            permiten identificar la enfermedad antes de que aparezca un daño
+            estructural irreversible.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-bold mb-4 accent-text">
+            Criterios de Clasificación ASAS
+          </h3>
+          <p class="mb-6 text-gray-700">
+            Se aplican a pacientes con dolor lumbar >3 meses y edad de inicio
+            <45 años. Se clasifica si se cumple una de las dos ramas:
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="border p-4 rounded-lg bg-gray-50">
+              <h4 class="font-bold text-lg mb-2 secondary-accent-text">
+                Rama de Imagen
+              </h4>
+              <p class="mb-2">
+                <strong>Sacroileítis en imagen</strong> (Rayos X o RMN) + al
+                menos <strong>1 característica</strong> de EspA.
+              </p>
+            </div>
+            <div class="border p-4 rounded-lg bg-gray-50">
+              <h4 class="font-bold text-lg mb-2 secondary-accent-text">
+                Rama Clínica
+              </h4>
+              <p class="mb-2">
+                <strong>HLA-B27 positivo</strong> + al menos
+                <strong>2 características</strong> de EspA.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8 border-t pt-6">
+            <h3 class="text-xl font-bold mb-3 accent-text">
+              Monitorización: ASDAS
+            </h3>
+            <p class="text-gray-800">
+              El
+              <strong class="secondary-accent-text"
+                >ASDAS (Ankylosing Spondylitis Disease Activity Score)</strong
+              >
+              es la herramienta preferida para medir la actividad de la
+              enfermedad. Un
+              <strong class="font-bold">ASDAS ≥ 2.1</strong> define una
+              enfermedad muy activa y es el umbral clave para escalar el
+              tratamiento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tratamiento" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold accent-text mb-4">
+            Ruta de Decisión Terapéutica
+          </h2>
+          <p class="max-w-3xl mx-auto text-lg text-gray-700">
+            Esta herramienta interactiva te guiará a través del algoritmo de
+            decisión recomendado por las guías clínicas.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-lg">
+          <div class="space-y-6">
+            <div class="p-4 border-l-4 accent-border rounded-r-lg bg-gray-50">
+              <h4 class="text-lg font-bold accent-text">
+                1ª Línea: Terapia Convencional
+              </h4>
+              <p class="mt-1 text-gray-800">
+                Ejercicio/fisioterapia +
+                <strong class="font-semibold">AINEs</strong> (probar al menos 2
+                distintos a dosis máximas).
+              </p>
+            </div>
+            <div class="text-center">
+              <div class="font-bold text-gray-500 text-2xl my-2">↓</div>
+              <p class="font-semibold mb-2">¿Fracaso (ASDAS ≥ 2.1)?</p>
+              <button
+                id="escalate-btn"
+                class="btn bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full shadow-md"
+              >
+                Sí, escalar a 2ª Línea
+              </button>
+            </div>
+            <div id="second-line-therapy" class="hidden space-y-6">
+              <div
+                class="p-4 border-l-4 secondary-accent-border rounded-r-lg bg-gray-50"
+              >
+                <h4 class="text-lg font-bold secondary-accent-text">
+                  2ª Línea: Selección de Terapia Dirigida
+                </h4>
+                <p class="mt-1 text-gray-800">
+                  La elección depende crucialmente de las
+                  <strong class="font-semibold"
+                    >Manifestaciones Extraarticulares (EMMs)</strong
+                  >. Selecciona el fenotipo del paciente:
+                </p>
+              </div>
+              <div class="grid sm:grid-cols-3 gap-4 text-center">
+                <button
+                  data-phenotype="uveitis-ibd"
+                  class="phenotype-btn btn border-2 accent-border p-4 rounded-lg hover:bg-green-50"
+                >
+                  <span class="text-2xl">👁️‍🗨️/🩺</span>
+                  <span class="block font-semibold mt-2">Uveítis o EII</span>
+                </button>
+                <button
+                  data-phenotype="psoriasis"
+                  class="phenotype-btn btn border-2 accent-border p-4 rounded-lg hover:bg-green-50"
+                >
+                  <span class="text-2xl">🖐️✨</span>
+                  <span class="block font-semibold mt-2">Psoriasis</span>
+                </button>
+                <button
+                  data-phenotype="none"
+                  class="phenotype-btn btn border-2 accent-border p-4 rounded-lg hover:bg-green-50"
+                >
+                  <span class="text-2xl">🤷‍♂️</span>
+                  <span class="block font-semibold mt-2">Sin EMMs</span>
+                </button>
+              </div>
+              <div id="recommendation-panel" class="hidden mt-6">
+                <div
+                  id="rec-uveitis-ibd"
+                  class="rec-content hidden p-4 bg-blue-50 border-l-4 border-blue-500 rounded-lg"
+                >
+                  <h5 class="font-bold text-blue-800 text-lg">
+                    Recomendación: Inhibidores de TNF (Monoclonales)
+                  </h5>
+                </div>
+                <div
+                  id="rec-psoriasis"
+                  class="rec-content hidden p-4 bg-purple-50 border-l-4 border-purple-500 rounded-lg"
+                >
+                  <h5 class="font-bold text-purple-800 text-lg">
+                    Recomendación: Inhibidores de IL-17
+                  </h5>
+                </div>
+                <div
+                  id="rec-none"
+                  class="rec-content hidden p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-lg"
+                >
+                  <h5 class="font-bold text-yellow-800 text-lg">
+                    Recomendación: Anti-TNF o Anti-IL-17
+                  </h5>
+                </div>
+                <div
+                  id="rec-ijak"
+                  class="rec-content hidden p-4 bg-red-50 border-l-4 border-red-500 rounded-lg mt-4"
+                >
+                  <h5 class="font-bold text-red-800 text-lg">
+                    Consideración sobre iJAKs (3ª línea)
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparativa" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold accent-text mb-4">
+            Análisis Comparativo de Terapias
+          </h2>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="chart-container mx-auto">
+            <canvas id="comparisonChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section id="farmacoeconomia" class="mb-16">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold accent-text mb-4">
+            Perspectiva Farmacoeconómica
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-5 gap-8 items-center">
+          <div class="md:col-span-3 bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-3 accent-text">
+              Costos Directos vs. Indirectos
+            </h3>
+            <p class="text-gray-800">
+              La carga económica real de la EA está dominada por los
+              <strong class="secondary-accent-text">costos indirectos</strong>
+              (pérdida de productividad), que pueden superar el 70% del costo
+              total. Esto justifica la inversión en terapias eficaces que
+              mantengan a los pacientes funcionales.
+            </p>
+          </div>
+          <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+            <div
+              class="chart-container mx-auto"
+              style="height: 300px; max-height: 300px"
+            >
+              <canvas id="costChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+      <div class="container mx-auto py-4 px-5 text-center">
+        <p class="text-sm">
+          Aplicación generada a partir del informe "Análisis Farmacoterapéutico
+          y Farmacoeconómico para el Manejo Racional de la Espondilitis
+          Anquilosante".
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach((link) => {
+          link.addEventListener('click', () => {
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+          });
+        });
+
+        const escalateBtn = document.getElementById('escalate-btn');
+        const secondLineTherapy = document.getElementById(
+          'second-line-therapy',
+        );
+        const recommendationPanel = document.getElementById(
+          'recommendation-panel',
+        );
+        const phenotypeBtns = document.querySelectorAll('.phenotype-btn');
+        const recContents = document.querySelectorAll('.rec-content');
+
+        escalateBtn.addEventListener('click', () => {
+          secondLineTherapy.classList.remove('hidden');
+          escalateBtn.classList.add('hidden');
+        });
+
+        phenotypeBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const phenotype = btn.dataset.phenotype;
+            phenotypeBtns.forEach((b) =>
+              b.classList.remove('accent-bg', 'text-white', 'font-bold'),
+            );
+            btn.classList.add('accent-bg', 'text-white', 'font-bold');
+            recommendationPanel.classList.remove('hidden');
+            recContents.forEach((content) => content.classList.add('hidden'));
+            const recToShow = document.getElementById(`rec-${phenotype}`);
+            if (recToShow) recToShow.classList.remove('hidden');
+            document.getElementById('rec-ijak').classList.remove('hidden');
+          });
+        });
+
+        const comparisonCtx = document
+          .getElementById('comparisonChart')
+          .getContext('2d');
+        new Chart(comparisonCtx, {
+          type: 'radar',
+          data: {
+            labels: [
+              'Eficacia Axial',
+              'Eficacia Periférica',
+              'Seguridad GI/CV',
+              'Riesgo Infección',
+              'Conveniencia',
+              'Costo Adquisición',
+            ],
+            datasets: [
+              {
+                label: 'AINEs',
+                data: [6, 6, 2, 1, 9, 1],
+                backgroundColor: 'rgba(194, 65, 12, 0.2)',
+                borderColor: 'rgba(194, 65, 12, 1)',
+                borderWidth: 2,
+              },
+              {
+                label: 'Anti-TNF',
+                data: [9, 9, 7, 5, 5, 9],
+                backgroundColor: 'rgba(6, 95, 70, 0.2)',
+                borderColor: 'rgba(6, 95, 70, 1)',
+                borderWidth: 2,
+              },
+              {
+                label: 'Anti-IL-17',
+                data: [9, 9, 8, 5, 5, 9],
+                backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                borderColor: 'rgba(139, 92, 246, 1)',
+                borderWidth: 2,
+              },
+              {
+                label: 'iJAK',
+                data: [8, 8, 4, 6, 9, 8],
+                backgroundColor: 'rgba(220, 38, 38, 0.2)',
+                borderColor: 'rgba(220, 38, 38, 1)',
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: { scales: { r: { suggestedMin: 0, suggestedMax: 10 } } },
+        });
+
+        const costCtx = document.getElementById('costChart').getContext('2d');
+        new Chart(costCtx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Costos Indirectos', 'Costos Directos'],
+            datasets: [
+              {
+                data: [70, 30],
+                backgroundColor: ['#C2410C', '#065F46'],
+                borderColor: '#F8F9FA',
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            plugins: {
+              title: {
+                display: true,
+                text: 'Carga Económica Societal de la EA',
+              },
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

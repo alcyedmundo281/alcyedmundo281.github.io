@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Técnico: Apixabán (B01AF02)</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/apixaban.html" />
+    <link href="../assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../assets/tailwind.css" rel="stylesheet" />
+    <style>
+        @import url('../assets/fonts/fonts.css');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .citation {
+            color: #3b82f6;
+            font-weight: 500;
+            font-size: 0.85em;
+            cursor: help;
+        }
+
+        .status-yellow {
+            background-color: #fef3c7;
+            border-left: 6px solid #f59e0b;
+            color: #92400e;
+        }
+
+        .card {
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="font-inter text-slate-800">
+
+    <!-- Header Principal -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="bg-blue-600 text-white p-3 rounded-xl">
+                    <i class="fa-solid fa-pills text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-slate-900">Apixabán <span class="text-slate-400 font-normal">|
+                            B01AF02</span></h1>
+                    <p class="text-sm text-slate-500 font-medium uppercase tracking-wider">Tecnología</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 status-yellow">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    RECOMENDACIÓN: AMARILLO
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+        <!-- Sidebar de Información Rápida -->
+        <aside class="lg:col-span-4 space-y-6">
+            <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2 border-b pb-2">
+                    <i class="fa-solid fa-id-card text-blue-500"></i> Identificación
+                </h2>
+                <ul class="space-y-3 text-sm">
+                    <li><span class="text-slate-500 block">DCI:</span> <span class="font-semibold">Apixaban</span></li>
+                    <li><span class="text-slate-500 block">Forma Farmacéutica (CNMB):</span> <span
+                            class="font-semibold text-slate-700 uppercase">Sólido oral</span></li>
+                    <li><span class="text-slate-500 block">Concentración:</span> <span class="font-semibold">2.5 mg, 5
+                            mg</span></li>
+                    <li><span class="text-slate-500 block">Vía Admin:</span> <span
+                            class="font-semibold uppercase italic">Oral</span></li>
+                    <li><span class="text-slate-500 block">Presentación:</span> <span class="font-semibold">Caja por 20,
+                            30 o 60 comprimidos</span></li>
+                </ul>
+                <div class="mt-6 p-4 bg-slate-50 rounded-lg text-xs text-slate-600 italic">
+                    <i class="fa-solid fa-info-circle mr-1"></i>
+                    Información Sanitaria: Registro sanitario no encontrado en fuentes públicas. Marcas referenciales:
+                    Eliquis (Pfizer), Abatixent (Sandoz).
+                </div>
+            </section>
+
+            <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2 border-b pb-2 text-indigo-600">
+                    <i class="fa-solid fa-microscope"></i> PICO
+                </h2>
+                <div class="space-y-4 text-sm">
+                    <div class="p-3 bg-indigo-50 rounded-lg">
+                        <strong class="text-indigo-700 block mb-1">Población (P):</strong>
+                        <p class="text-slate-600 leading-relaxed">Pacientes adultos con alto riesgo de eventos
+                            tromboembólicos (FA no valvular o ETEV) en el sistema público ecuatoriano.</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-slate-300">
+                        <strong class="block mb-1">Intervención (I):</strong>
+                        <p class="text-slate-600">Apixabán</p>
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-lg border-l-4 border-slate-300">
+                        <strong class="block mb-1">Comparador (C):</strong>
+                        <p class="text-slate-600">Warfarina sódica (sólido oral)</p>
+                    </div>
+                    <div class="p-3 bg-green-50 rounded-lg">
+                        <strong class="text-green-700 block mb-1">Resultados (O):</strong>
+                        <p class="text-slate-600">Prevención de ictus, tromboembolismo, incidencia de hemorragia mayor,
+                            intracraneal y mortalidad.</p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Contenido Central -->
+        <div class="lg:col-span-8 space-y-8">
+
+            <!-- Indicación Terapéutica -->
+            <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-stethoscope text-red-500"></i> Indicación y Mecanismo
+                </h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-slate-700 mb-2">Mecanismo de Acción</h3>
+                        <p class="text-slate-600 leading-relaxed text-sm">
+                            Inhibidor potente, oral, reversible, directo y altamente selectivo del factor Xa. No
+                            requiere antitrombina III. Inhibe tanto el factor Xa libre como el ligado al coágulo. <span
+                                class="citation">[Vademecum2024]</span>
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-50 rounded-xl">
+                            <h4 class="font-bold text-xs uppercase text-slate-400 mb-2 tracking-widest text-center">
+                                Alternativas CNMB</h4>
+                            <ul class="text-sm list-disc pl-4 text-slate-600 space-y-1">
+                                <li>Warfarina sódica</li>
+                                <li>Enoxaparina / Heparina</li>
+                                <li>Rivaroxabán / Dabigatrán</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-xl border-dashed border-2 border-slate-200">
+                            <h4 class="font-bold text-xs uppercase text-slate-400 mb-2 tracking-widest text-center">
+                                Alternativas No CNMB</h4>
+                            <ul class="text-sm list-disc pl-4 text-slate-600 space-y-1">
+                                <li>Edoxabán</li>
+                                <li>Betrixabán</li>
+                                <li>Fondaparinux</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resumen de Evidencia Clínica -->
+            <section>
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
+                    <i class="fa-solid fa-book-medical text-emerald-500"></i> Resumen de Evidencia (GRADE)
+                </h2>
+                <div class="grid gap-4">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 card">
+                        <div class="flex justify-between items-start mb-3">
+                            <span
+                                class="text-xs font-bold px-2 py-1 bg-emerald-100 text-emerald-700 rounded uppercase">Certeza
+                                Alta</span>
+                            <span class="text-blue-600 font-mono font-bold text-sm underline italic">ARISTOTLE</span>
+                        </div>
+                        <h4 class="font-bold mb-2">Prevención de ACV y Embolia Sistémica</h4>
+                        <p class="text-sm text-slate-600 mb-2 italic">"Apixabán (5mg c/12h) demostró superioridad frente
+                            a warfarina (HR 0.79; P=0.01) con menor riesgo de sangrado mayor (HR 0.69)."</p>
+                        <div class="text-xs text-slate-400 bg-slate-50 p-2 rounded">
+                            N=18,201 pacientes con FA no valvular.
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 card">
+                        <div class="flex justify-between items-start mb-3">
+                            <span
+                                class="text-xs font-bold px-2 py-1 bg-emerald-100 text-emerald-700 rounded uppercase">Certeza
+                                Alta</span>
+                            <span class="text-blue-600 font-mono font-bold text-sm underline italic">AMPLIFY</span>
+                        </div>
+                        <h4 class="font-bold mb-2">Seguridad (Hemorragia Mayor)</h4>
+                        <p class="text-sm text-slate-600 mb-2 italic">"Reducción significativa del sangrado mayor frente
+                            a warfarina (RR 0.31; P < 0.001) en tratamiento de TEV agudo."</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Datos Económicos -->
+            <section class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <i class="fa-solid fa-chart-line text-8xl"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-8 flex items-center gap-2 border-b border-slate-700 pb-4">
+                    <i class="fa-solid fa-hand-holding-dollar text-yellow-400"></i> Análisis de Costos y Sostenibilidad
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-slate-700 pb-2">
+                            <span class="text-slate-400">Costo Anual Apixabán:</span>
+                            <span class="text-lg font-bold">$1,146.10 USD</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-700 pb-2">
+                            <span class="text-slate-400">Costo Anual Warfarina:</span>
+                            <span class="text-lg font-bold text-slate-300">$250.00 USD</span>
+                        </div>
+                        <div class="p-4 bg-red-900/30 rounded-xl border border-red-800/50 mt-4">
+                            <p class="text-xs uppercase font-bold text-red-400 mb-1 tracking-widest">Costo Incremental
+                                (ΔC)</p>
+                            <p class="text-2xl font-black text-red-500">+$896.10 <span class="text-sm font-normal">por
+                                    paciente/año</span></p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                        <h3 class="text-sm font-bold text-yellow-500 uppercase mb-4 tracking-wider">Impacto
+                            Presupuestario (RPIS)</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1 uppercase"><span>Año 1 (10%)</span>
+                                    <span>$818k</span></div>
+                                <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-blue-500 h-full w-[10%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1 uppercase"><span>Año 3 (30%)</span>
+                                    <span>$2.45M</span></div>
+                                <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-blue-500 h-full w-[30%]"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1 uppercase"><span>Año 5 (50%)</span>
+                                    <span>$4.09M</span></div>
+                                <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-blue-500 h-full w-[50%]"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-4 text-center">Impacto acumulado 5 años: >$12.2 Millones
+                            USD</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seguridad y Conveniencia -->
+            <section class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-red-600 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Alertas y Reacciones
+                    </h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex justify-between border-b pb-1"><span>Hemorragia Gastrointestinal</span> <span
+                                class="font-bold text-red-500">Grave (1-10%)</span></li>
+                        <li class="flex justify-between border-b pb-1"><span>Hematuria</span> <span
+                                class="font-bold text-amber-500">Moderada</span></li>
+                        <li class="flex justify-between border-b pb-1"><span>Epistaxis / Anemia</span> <span
+                                class="font-bold text-slate-400">Leve</span></li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-red-50 border border-red-100 rounded text-[11px] text-red-800">
+                        <strong>Recuadro Negro FDA:</strong> Riesgo de eventos trombóticos tras descontinuación
+                        prematura y hematomas espinales en anestesia neuroaxial.
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-blue-600 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-thumbs-up"></i> Conveniencia
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-check-circle text-green-500 mt-1"></i>
+                            <p class="text-xs"><strong>Adherencia:</strong> Elimina monitoreo INR y restricciones
+                                dietéticas. Ideal para áreas rurales.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-times-circle text-red-400 mt-1"></i>
+                            <p class="text-xs"><strong>Frecuencia:</strong> Dos dosis diarias (frente a dosis única de
+                                rivaroxabán).</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-hospital text-blue-400 mt-1"></i>
+                            <p class="text-xs"><strong>Hospitalización:</strong> Reduce estancia por complicaciones
+                                hemorrágicas vs warfarina.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conclusión y Recomendación -->
+            <section class="bg-white p-8 rounded-2xl shadow-sm border-2 border-slate-200">
+                <h2
+                    class="text-2xl font-bold mb-6 flex items-center gap-2 text-slate-900 underline decoration-blue-500 underline-offset-8">
+                    Conclusión Técnica
+                </h2>
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    El apixabán evidencia una <strong>superioridad clínica en seguridad</strong> frente a la warfarina
+                    (reducción de hemorragias mayores e intracraneales). Aunque es necesario para mejorar la
+                    sostenibilidad y seguridad del paciente ecuatoriano (especialmente ante la dificultad de monitorear
+                    el INR en zonas remotas), su <strong>costo de adquisición</strong> representa una barrera
+                    significativa para la sostenibilidad fiscal sin una negociación de precio agresiva o acuerdos de
+                    riesgo compartido.
+                </p>
+                <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
+                    <h3 class="text-sm font-black uppercase text-slate-400 mb-3 tracking-widest">Estrategia de Acceso
+                        Sugerida</h3>
+                    <p class="font-bold text-slate-800 mb-4 italic">
+                        "Techo sugerido: $1.52 USD."
+                    </p>
+                    <div class="flex justify-center mt-6">
+                        <div
+                            class="flex items-center gap-2 px-8 py-4 bg-yellow-400 text-yellow-900 rounded-2xl font-black text-xl shadow-lg shadow-yellow-200">
+                            <i class="fa-solid fa-traffic-light"></i> SEMÁFORO: AMARILLO
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bibliografía -->
+            <section
+                class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-opacity">
+                <h2 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-list-ol text-slate-400"></i> Referencias Bibliográficas
+                </h2>
+                <div class="text-[11px] text-slate-500 space-y-2 h-40 overflow-y-auto pr-4 custom-scrollbar">
+                    <p>[Vademecum2024] Vademecum Internacional. Monografía ATC5: Apixaban. Madrid, España; 2024.</p>
+                    <p>[EMA2021] Agencia Europea de Medicamentos. Resumen de características del producto: Apixaban;
+                        2021.</p>
+                    <p>[CONITEC2016] Relatório de Recomendação nº 195. Brasília: Ministério da Saúde; 2016.</p>
+                    <p>[ARISTOTLE] Granger CB, et al. Apixaban versus warfarin in patients with atrial fibrillation. N
+                        Engl J Med. 2011;365(11):981-992.</p>
+                    <p>[AMPLIFY] Agnelli G, et al. Oral apixaban for the treatment of acute venous thromboembolism. N
+                        Engl J Med. 2013;369(9):799-808.</p>
+                    <p>[MSP-CNMB] Consejo Nacional de Salud. Cuadro Nacional de Medicamentos Básicos. 10ma Revisión;
+                        2019.</p>
+                    <p>[Sumerlabs2023] Precios de mercado de Mantixa/Eliquis en Quito, Ecuador. Sumerlabs; 2023.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-slate-100 border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-slate-400 text-sm">Este reporte ha sido generado automáticamente para el análisis técnico de
+                tecnologías sanitarias.</p>
+            <p class="text-slate-400 text-xs mt-2">© 2024 - Sistema de Evaluación de Tecnologías en Salud</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

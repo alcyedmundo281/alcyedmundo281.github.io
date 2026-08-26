@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía Técnica: Nivolumab en Cáncer Gástrico</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/nivolumab.html" />
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e67e22;
+            --success: #27ae60;
+            --danger: #c0392b;
+            --warning: #f1c40f;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+            --border: #dee2e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid var(--secondary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 { margin: 0; color: var(--primary); font-size: 26px; letter-spacing: -0.5px; }
+        .subtitle { color: var(--secondary); font-weight: 600; font-size: 18px; margin-top: 5px; }
+        .header-meta { font-size: 14px; color: #666; margin-top: 10px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .full-width { grid-column: 1 / -1; }
+
+        h2 {
+            border-left: 5px solid var(--secondary);
+            padding-left: 12px;
+            font-size: 17px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .stat-box {
+            display: flex;
+            justify-content: space-around;
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-item .value { display: block; font-size: 24px; font-weight: 800; color: var(--secondary); }
+        .stat-item .label { font-size: 11px; text-transform: uppercase; font-weight: 600; color: #7f8c8d; }
+
+        .traffic-light-container {
+            display: flex;
+            align-items: center;
+            background: #fffdf5;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #fcf3cf;
+        }
+
+        .traffic-light {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: var(--warning);
+            box-shadow: 0 0 12px rgba(241, 196, 15, 0.4);
+        }
+
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .cost-table th { background: var(--light); text-align: left; }
+        .cost-table td, .cost-table th { border: 1px solid var(--border); padding: 12px; }
+
+        .alert-badge {
+            background: #fdf2f2;
+            color: var(--danger);
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            border: 1px solid #f8d7da;
+            margin-top: 10px;
+        }
+
+        .tag-score {
+            background: var(--primary);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+            text-align: justify;
+        }
+
+        ul { padding-left: 20px; margin: 0; }
+        li { font-size: 14px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Evaluación de Tecnología Sanitaria</h1>
+        <div class="subtitle">Nivolumab en combinación con Quimioterapia</div>
+        <div class="header-meta">
+            <strong>Indicación:</strong> Adenocarcinoma gástrico o UGE avanzado, HER2(-), PD-L1 CPS ≥ 5<br>
+            <strong>Código ATC:</strong> L01FF01 | <strong>Mecanismo:</strong> Anti-PD-1
+        </div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Eficacia (CheckMate 649)</h2>
+            <p style="font-size: 14px;">Resultados en población con CPS ≥ 5:</p>
+            <div class="stat-box">
+                <div class="stat-item">
+                    <span class="value">14.4 m</span>
+                    <span class="label">Mediana SG</span>
+                </div>
+                <div class="stat-item">
+                    <span class="value">0.71</span>
+                    <span class="label">Hazard Ratio</span>
+                </div>
+                <div class="stat-item">
+                    <span class="value">29%</span>
+                    <span class="label">Reducción Riesgo</span>
+                </div>
+            </div>
+            <p style="font-size: 13px;">
+                <strong>Relevancia Clínica:</strong> <span class="tag-score">ESMO-MCBS v1.1: Puntaje 4</span>
+                <br><br>
+                La adición de Nivolumab al estándar citotóxico (XELOX/FOLFOX) demuestra un beneficio superior frente a la quimioterapia sola.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Perfil de Seguridad y Riesgos</h2>
+            <ul>
+                <li><strong>Neutropenia Grado 3-4:</strong> 15%</li>
+                <li><strong>Fatiga y Astenia:</strong> 35%</li>
+                <li><strong>Toxicidad Gastrointestinal:</strong> 12%</li>
+            </ul>
+            <div class="alert-badge">
+                <strong>Nota de Seguridad:</strong> Riesgo de eventos adversos inmunomediados (8-10%) que requieren protocolos específicos de manejo con corticoides.
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Análisis de Sostenibilidad Económica (Ecuador)</h2>
+            <table class="cost-table">
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Nivolumab + Quimioterapia</th>
+                        <th>Quimioterapia Estándar (CNMB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Costo Anual Paciente</strong></td>
+                        <td>$75,440.00 USD</td>
+                        <td>$2,000.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diferencia Incremental</strong></td>
+                        <td>+$73,440.00 USD</td>
+                        <td>Ref.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; font-size: 14px; color: var(--danger); text-align: center;">
+                <strong>Impacto Presupuestario Proyectado (5 años): $206,733,600.00 USD</strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Conveniencia y Adherencia</h2>
+            <ul>
+                <li><strong>Administración:</strong> Intravenosa (Hospital de Día).</li>
+                <li><strong>Adherencia:</strong> Alta (Supervisión médica directa).</li>
+                <li><strong>Logística:</strong> Requiere centros de tercer nivel para infusión cada 2-3 semanas.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Dictamen de Acceso</h2>
+            <div class="traffic-light-container">
+                <div class="traffic-light"></div>
+                <div>
+                    <strong style="color: var(--accent);">RECOMENDACIÓN: AMARILLO</strong>
+                    <p style="font-size: 12px; margin: 5px 0 0 0;">Inclusión condicionada a negociación de precio o acuerdos de riesgo compartido.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card full-width" style="margin-top: 25px; border-style: dashed; background: #fafafa;">
+        <h2>Conclusión General</h2>
+        <p style="font-size: 14px; margin: 0;">
+            Nivolumab presenta evidencia sólida de alta calidad para la mejora de la supervivencia en cáncer gástrico avanzado. Sin embargo, su rentabilidad es negativa bajo el precio actual de mercado. Se recomienda priorizar el acceso mediante biomarcadores confirmados (CPS ≥ 5) y mecanismos de mitigación financiera para asegurar la sostenibilidad del fondo de salud.
+        </p>
+    </div>
+
+    <footer>
+        <strong>Fuentes principales:</strong> Janjigian YY, et al. CheckMate 649 (Lancet 2021); Li JB, et al. (Cancer Immunol Immunother 2024); Guías ESMO 2022; Cuadro Nacional de Medicamentos Básicos Ecuador (11va Revisión).
+    </footer>
+</div>
+
+</body>
+</html>

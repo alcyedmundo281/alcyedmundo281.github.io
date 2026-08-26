@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Pembrolizumab en CPNM Escamoso</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/pembrolizumab_escamoso.html" />
+    <style>
+        :root {
+            --primary: #0984e3;
+            --secondary: #d63031;
+            --accent: #fdcb6e;
+            --success: #00b894;
+            --danger: #d63031;
+            --warning: #f1c40f;
+            --light: #f1f2f6;
+            --dark: #2d3436;
+            --border: #dfe6e9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 0;
+            padding: 20px;
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        h1 { margin: 0; font-size: 26px; color: var(--dark); }
+        .subtitle { color: #636e72; font-size: 16px; margin-top: 5px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .full-width { grid-column: 1 / -1; }
+
+        h2 {
+            font-size: 17px;
+            margin-top: 0;
+            color: var(--primary);
+            text-transform: uppercase;
+            border-left: 5px solid var(--primary);
+            padding-left: 12px;
+            margin-bottom: 15px;
+        }
+
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .metric-item { text-align: center; }
+        .metric-val { display: block; font-size: 24px; font-weight: 800; color: var(--primary); }
+        .metric-label { font-size: 11px; color: #636e72; text-transform: uppercase; font-weight: 600; }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .table th { background: #f8f9fa; text-align: left; }
+        .table td, .table th { border: 1px solid var(--border); padding: 12px; }
+
+        .budget-banner {
+            background: linear-gradient(135deg, var(--secondary) 0%, #ff7675 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .budget-banner .amount { font-size: 22px; font-weight: 800; display: block; }
+
+        .recommendation-box {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fff9db;
+            border: 1px solid #ffe066;
+        }
+
+        .light-indicator {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--warning);
+            margin-right: 15px;
+            box-shadow: 0 0 10px rgba(241, 196, 15, 0.5);
+        }
+
+        .safety-alert {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #c53030;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #b2bec3;
+            text-align: justify;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .tag-esmo {
+            background: #2d3436;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="badge">Inmunoterapia - CPNM Escamoso</div>
+        <h1>Pembrolizumab + Carboplatino / Paclitaxel</h1>
+        <div class="subtitle">Evaluación de 1ra Línea Metastásica | ATC: L01FF02</div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h2>Eficacia (KEYNOTE-407)</h2>
+            <div class="metrics">
+                <div class="metric-item">
+                    <span class="metric-val">17.2 m</span>
+                    <span class="metric-label">SG Mediana</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">0.71</span>
+                    <span class="metric-label">Hazard Ratio (SG)</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-val">0.62</span>
+                    <span class="metric-label">HR (SLP)</span>
+                </div>
+            </div>
+            <p style="font-size: 13px;">
+                <strong>Evidencia a 5 años:</strong> Supervivencia global significativamente superior frente a quimioterapia estándar.
+                <br><strong>Valor Clínico:</strong> <span class="tag-esmo">ESMO-MCBS ≥ 4</span> (Beneficio relevante).
+            </p>
+            
+        </div>
+
+        <div class="card">
+            <h2>Perfil de Seguridad</h2>
+            <ul style="font-size: 13px; padding-left: 20px; margin-bottom: 0;">
+                <li><strong>Eventos Comunes:</strong> Fatiga, náuseas, alopecia y anemia.</li>
+                <li><strong>Riesgos Inmunes:</strong> Neumonitis, colitis y nefritis inmunomediada.</li>
+                <li><strong>Toxicidad Hematológica:</strong> Neutropenia grado 3-4 en pacientes seleccionados.</li>
+            </ul>
+            <div class="safety-alert">
+                ⚠️ <strong>Nota:</strong> No se considera más seguro que la quimioterapia estándar; añade riesgos autoinmunes graves.
+            </div>
+        </div>
+
+        <div class="card full-width">
+            <h2>Sostenibilidad Económica (Ecuador / RPIS)</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Parámetro</th>
+                        <th>Pembrolizumab + Quimio</th>
+                        <th>Quimioterapia (CNMB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Costo Anual Paciente</strong></td>
+                        <td>$119,000.00 USD</td>
+                        <td>$1,500.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Eficacia Incremental</strong></td>
+                        <td>1.168 AVACs</td>
+                        <td>Referencia</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Precio Techo Sugerido</strong></td>
+                        <td>$743.05 / vial 100mg</td>
+                        <td>Reducción requerida: 78.7%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="budget-banner">
+                IMPACTO PRESUPUESTARIO (5 AÑOS):
+                <span class="amount">$77,350,000.00 USD</span>
+            </div>
+            <p style="font-size: 12px; margin-top: 10px; text-align: center; color: #636e72;">
+                *Basado en una incidencia estimada de 120 pacientes anuales en la Red Pública Integral de Salud.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Conveniencia y Barreras</h2>
+            <ul style="font-size: 13px; padding-left: 20px;">
+                <li><strong>Administración:</strong> Infusión IV cada 3 semanas (17 ciclos/año).</li>
+                <li><strong>Logística:</strong> Requiere centros oncológicos especializados y monitoreo de toxicidad.</li>
+                <li><strong>Acceso:</strong> Barreras geográficas significativas para pacientes fuera de Quito/Guayaquil.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Dictamen Final</h2>
+            <div class="recommendation-box">
+                <div class="light-indicator"></div>
+                <div>
+                    <strong style="color: #856404; font-size: 15px;">RECOMENDACIÓN: AMARILLO</strong>
+                    <p style="font-size: 11px; margin-top: 4px; color: #856404;">
+                        Inclusión condicionada a <strong>Acuerdo de Riesgo Compartido (MEA)</strong>. Negociación agresiva de precio vinculada a resultados clínicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <strong>Fuentes principales:</strong> KEYNOTE-407 (NEJM 2018/JCO 2023); NICE TA770; CONITEC 859; CNMB 11va Revisión; SERCOP 2023.
+    </footer>
+</div>
+
+</body>
+</html>

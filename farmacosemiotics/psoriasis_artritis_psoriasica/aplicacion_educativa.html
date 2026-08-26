@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo Educativo: Tratamiento Racional de la Psoriasis</title>
+    <link rel="canonical" href="https://powersemiotics.com/farmacosemiotics/psoriasis_artritis_psoriasica/aplicacion_educativa.html" />
+
+    <!-- Tailwind CSS -->
+    <!-- Google Fonts: Inter -->
+    <!-- Chart.js para gráficos -->
+    <script src="../../assets/vendor/chartjs/chart.umd.min.js"></script>
+
+    <!-- Iconos (Lucide y Font Awesome) -->
+    <script src="../../assets/vendor/lucide/lucide-react-0.263.1.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/fontawesome/css/all.min.css"
+    />
+
+    <link href="../../assets/tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <!-- Encabezado del Sitio (Integrado) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="../../index.html" class="flex items-center space-x-2">
+          <img
+            src="../../assets/images/logo.png"
+            alt="Logo de Powersemiotics"
+            class="h-8 w-8"
+          />
+          <span class="text-2xl font-bold gradient-text-header"
+            >Powersemiotics</span
+          >
+        </a>
+        <div>
+          <a
+            href="../index.html"
+            class="text-indigo-600 font-semibold hover:underline"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>Volver a Farmacoterapia
+            Racional
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido del Módulo Interactivo -->
+    <div class="p-4 md:p-8">
+      <div
+        class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden"
+      >
+        <!-- Encabezado del Módulo -->
+        <div
+          class="p-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white"
+        >
+          <h1 class="text-3xl md:text-4xl font-bold">
+            Guía de Farmacoterapia Racional
+          </h1>
+          <p class="text-xl mt-1">Psoriasis y Artritis Psoriásica</p>
+          <p class="mt-4 max-w-2xl text-blue-100">
+            Este módulo explora las opciones de tratamiento basadas en los
+            cuatro pilares de la OMS: Eficacia, Seguridad, Conveniencia y Costo.
+          </p>
+        </div>
+
+        <!-- Navegación por Tabs -->
+        <div
+          class="p-4 bg-gray-50 border-b border-gray-200 flex flex-wrap justify-center gap-2"
+        >
+          <button
+            class="tab-button active py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'Nivel1')"
+          >
+            Nivel 1: Tópicos y Fototerapia
+          </button>
+          <button
+            class="tab-button py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'Nivel2')"
+          >
+            Nivel 2: FAMEs Convencionales
+          </button>
+          <button
+            class="tab-button py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'Nivel3')"
+          >
+            Nivel 3: Terapias Dirigidas
+          </button>
+          <button
+            class="tab-button py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'APs')"
+          >
+            Manejo de APs
+          </button>
+          <button
+            class="tab-button py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'Casos')"
+          >
+            Casos Clínicos
+          </button>
+          <button
+            class="tab-button py-2 px-4 font-semibold rounded-lg"
+            onclick="openTab(event, 'Costos')"
+          >
+            Calculadora de Costo
+          </button>
+        </div>
+
+        <!-- Contenido de los Tabs -->
+        <div class="p-6 md:p-8">
+          <!-- Nivel 1: Terapias Fundamentales -->
+          <div id="Nivel1" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Nivel 1: Terapias Fundamentales
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Primera línea para enfermedad leve-moderada y base para casos más
+              graves.
+            </p>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="info-card border-l-blue-500">
+                <h3 class="font-bold text-lg mb-2">
+                  Corticosteroides Tópicos (ej. Betametasona)
+                </h3>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    Muy alta, acción rápida. Pilar del tratamiento agudo.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Riesgo de atrofia cutánea con uso prolongado.
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Muy Bajo (genéricos).
+                  </p>
+                </div>
+              </div>
+              <div class="info-card border-l-blue-500">
+                <h3 class="font-bold text-lg mb-2">
+                  Análogos de Vitamina D (ej. Calcipotriol)
+                </h3>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    Moderada. Ideal para mantenimiento y ahorro de esteroides.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Irritación local. Perfil de seguridad favorable a largo
+                    plazo.
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Moderado.
+                  </p>
+                </div>
+              </div>
+              <div class="info-card border-l-blue-500 col-span-1 md:col-span-2">
+                <h3 class="font-bold text-lg mb-2">Fototerapia (UVB-NB)</h3>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    Alta para enfermedad moderada-grave.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Requiere supervisión. Riesgo de quemaduras y cáncer de piel
+                    a largo plazo.
+                  </p>
+                  <p>
+                    <span class="pill bg-orange-100 text-orange-800"
+                      >Conveniencia</span
+                    >
+                    Baja. Requiere 2-3 visitas/semana al centro.
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Muy costo-efectiva. Bajo costo por sesión.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nivel 2: FAMEs Convencionales -->
+          <div id="Nivel2" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Nivel 2: Fármacos Sistémicos Convencionales (FAMEc)
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Para enfermedad extensa o que no responde a terapias de Nivel 1.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div class="info-card border-l-green-500">
+                <h3 class="font-bold text-lg mb-2">Metotrexato (MTX)</h3>
+                <p class="text-sm text-gray-500 mb-2">
+                  El estándar de oro esencial.
+                </p>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    Buena (~45% PASI 75). Robusto en artritis.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Requiere monitorización (hígado, sangre). Teratógeno.
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Muy alta costo-efectividad.
+                  </p>
+                </div>
+              </div>
+              <div class="info-card border-l-orange-500">
+                <h3 class="font-bold text-lg mb-2">Ciclosporina</h3>
+                <p class="text-sm text-gray-500 mb-2">Terapia de rescate.</p>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    Muy alta y rápida. Ideal para casos graves/inestables.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Nefrotoxicidad e hipertensión. Uso a corto plazo.
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Moderada-baja costo-efectividad.
+                  </p>
+                </div>
+              </div>
+              <div class="info-card border-l-orange-500">
+                <h3 class="font-bold text-lg mb-2">Acitretina</h3>
+                <p class="text-sm text-gray-500 mb-2">Terapia de nicho.</p>
+                <div class="space-y-2 text-sm text-gray-700">
+                  <p>
+                    <span class="pill bg-green-100 text-green-800"
+                      >Eficacia</span
+                    >
+                    De elección para formas pustulosas y palmo-plantares.
+                  </p>
+                  <p>
+                    <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                    Alta teratogenicidad (hasta 3 años post-tto).
+                  </p>
+                  <p>
+                    <span class="pill bg-yellow-100 text-yellow-800"
+                      >Costo</span
+                    >
+                    Baja costo-efectividad.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nivel 3: Terapias Dirigidas (Con Gráfico) -->
+          <div id="Nivel3" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Nivel 3: La Revolución de las Terapias Dirigidas
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Estándar de oro para enfermedad moderada-grave refractaria, con
+              nuevos techos de eficacia.
+            </p>
+            <div class="space-y-6">
+              <div class="info-card border-l-purple-500">
+                <h3 class="font-bold text-lg">
+                  Inhibidores de TNF (ej. Adalimumab)
+                </h3>
+                <p>
+                  <span class="pill bg-green-100 text-green-800">Eficacia</span>
+                  Alta en piel y articulaciones. Opción "todoterreno".
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                  Caja Negra: Riesgo de infecciones graves (TB) y malignidad.
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-yellow-100 text-yellow-800">Costo</span>
+                  Alto, pero los biosimilares mejoran drásticamente su
+                  costo-efectividad.
+                </p>
+              </div>
+              <div class="info-card border-l-purple-500">
+                <h3 class="font-bold text-lg">
+                  Inhibidores de IL-17 / IL-23 (ej. Secukinumab, Guselkumab)
+                </h3>
+                <p>
+                  <span class="pill bg-green-100 text-green-800">Eficacia</span>
+                  Muy alta. El techo actual para el aclaramiento de la piel
+                  (PASI 90/100).
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                  Perfil muy favorable. IL-17 asociado a candidiasis; IL-23 sin
+                  advertencias específicas.
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-yellow-100 text-yellow-800">Costo</span>
+                  Muy elevado.
+                </p>
+              </div>
+              <!-- GRÁFICO DE EFICACIA -->
+              <div class="info-card border-l-indigo-500">
+                <h3 class="font-bold text-lg mb-4 text-center">
+                  Gráfico Comparativo de Eficacia (PASI 90)
+                </h3>
+                <p class="text-sm text-gray-600 text-center mb-4">
+                  Porcentaje de pacientes que alcanzan una mejoría del 90% en
+                  las lesiones cutáneas.
+                </p>
+                <div class="relative h-64">
+                  <canvas id="efficacyChart"></canvas>
+                </div>
+              </div>
+              <div class="info-card border-l-red-600">
+                <h3 class="font-bold text-lg">
+                  Inhibidores de JAK (ej. Tofacitinib)
+                </h3>
+                <p>
+                  <span class="pill bg-green-100 text-green-800">Eficacia</span>
+                  Alta y rápida, comparable a biológicos (vía oral).
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-red-100 text-red-800">Seguridad</span>
+                  Caja Negra: Riesgo aumentado de eventos cardiovasculares,
+                  trombosis y malignidad. Uso restringido.
+                </p>
+                <p class="mt-2">
+                  <span class="pill bg-yellow-100 text-yellow-800">Costo</span>
+                  Muy elevado.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artritis Psoriásica -->
+          <div id="APs" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Manejo Estratificado de la Artritis Psoriásica (APs)
+            </h2>
+            <p class="text-gray-600 mb-6">
+              El tratamiento se dirige al dominio predominante de la enfermedad.
+              La elección del fármaco es altamente personalizada.
+            </p>
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <h3 class="font-semibold text-lg text-center mb-4">
+                Guía de Decisión Terapéutica (Basado en EULAR 2023)
+              </h3>
+              <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="bg-blue-600 text-white rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold"
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Inicio con FAMEc</h4>
+                    <p>
+                      Metotrexato (MTX) es la primera elección, especialmente
+                      con psoriasis cutánea relevante.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="bg-blue-600 text-white rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold"
+                  >
+                    2
+                  </div>
+                  <div>
+                    <h4 class="font-bold">
+                      Si no hay respuesta &rarr; Escalar a Terapia Dirigida
+                    </h4>
+                    <p class="text-gray-600">
+                      La elección depende del fenotipo:
+                    </p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+                      <li>
+                        <span class="font-semibold">Piel predominante:</span>
+                        Preferir Inhibidores de IL-17 o IL-23.
+                      </li>
+                      <li>
+                        <span class="font-semibold"
+                          >Enfermedad axial predominante:</span
+                        >
+                        Preferir Inhibidores de IL-17 o TNF.
+                      </li>
+                      <li>
+                        <span class="font-semibold"
+                          >Comorbilidad (Uveítis/EII):</span
+                        >
+                        Preferir Inhibidores de TNF monoclonales.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div
+                    class="bg-blue-600 text-white rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold"
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h4 class="font-bold">
+                      Posicionamiento de Inhibidores de JAK
+                    </h4>
+                    <p>
+                      Debido a su perfil de seguridad, se reservan para después
+                      del fracaso de, al menos, un FAME biológico.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Casos Clínicos -->
+          <div id="Casos" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Casos Clínicos Interactivos
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Ponga a prueba sus conocimientos. Elija la opción terapéutica más
+              racional para cada paciente.
+            </p>
+
+            <!-- Caso 1 -->
+            <div class="info-card border-l-blue-500 mb-6">
+              <h3 class="font-bold text-lg mb-2">
+                Caso 1: Paciente con Psoriasis Cutánea Grave
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Hombre de 35 años con psoriasis en placas severa (BSA > 20%) que
+                ha fracasado al tratamiento con metotrexato. No tiene artritis
+                ni otras comorbilidades significativas. Su principal objetivo es
+                el aclaramiento máximo y rápido de la piel.
+              </p>
+              <div id="case1-options">
+                <label class="block mb-2"
+                  ><input type="radio" name="case1" value="a" /> A. Adalimumab
+                  (Anti-TNF)</label
+                >
+                <label class="block mb-2"
+                  ><input type="radio" name="case1" value="b" /> B. Secukinumab
+                  (Anti-IL-17)</label
+                >
+                <label class="block mb-2"
+                  ><input type="radio" name="case1" value="c" /> C.
+                  Apremilast</label
+                >
+              </div>
+              <button
+                class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                onclick="checkAnswer('case1', 'b')"
+              >
+                Verificar Respuesta
+              </button>
+              <div
+                id="feedback-case1-b"
+                class="feedback border-green-500 bg-green-50"
+              >
+                <p class="font-bold text-green-800">¡Correcto!</p>
+                <p>
+                  Dado que el objetivo principal es el máximo aclaramiento
+                  cutáneo y no hay otras comorbilidades, un inhibidor de IL-17 o
+                  IL-23 es la opción más eficaz. Ofrecen las tasas más altas de
+                  respuesta PASI 90/100, superando a los anti-TNF en este
+                  dominio.
+                </p>
+              </div>
+              <div
+                id="feedback-case1-a"
+                class="feedback border-red-500 bg-red-50"
+              >
+                <p class="font-bold text-red-800">Respuesta Incorrecta.</p>
+                <p>
+                  Aunque un anti-TNF es una opción válida, no es la que ofrece
+                  la MÁXIMA eficacia cutánea. Los inhibidores de IL-17/IL-23 son
+                  superiores para el aclaramiento de la piel.
+                </p>
+              </div>
+              <div
+                id="feedback-case1-c"
+                class="feedback border-red-500 bg-red-50"
+              >
+                <p class="font-bold text-red-800">Respuesta Incorrecta.</p>
+                <p>
+                  Apremilast tiene una eficacia moderada y es inferior a los
+                  biológicos. No sería la opción más racional para un paciente
+                  con enfermedad grave que busca el máximo aclaramiento.
+                </p>
+              </div>
+            </div>
+
+            <!-- Caso 2 -->
+            <div class="info-card border-l-blue-500">
+              <h3 class="font-bold text-lg mb-2">
+                Caso 2: Paciente con APs y Comorbilidad
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Mujer de 45 años con artritis psoriásica activa y enfermedad de
+                Crohn concomitante. Su psoriasis cutánea es leve. Ha respondido
+                de forma inadecuada a metotrexato.
+              </p>
+              <div id="case2-options">
+                <label class="block mb-2"
+                  ><input type="radio" name="case2" value="a" /> A. Adalimumab
+                  (Anti-TNF)</label
+                >
+                <label class="block mb-2"
+                  ><input type="radio" name="case2" value="b" /> B. Secukinumab
+                  (Anti-IL-17)</label
+                >
+                <label class="block mb-2"
+                  ><input type="radio" name="case2" value="c" /> C. Tofacitinib
+                  (Inhibidor de JAK)</label
+                >
+              </div>
+              <button
+                class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                onclick="checkAnswer('case2', 'a')"
+              >
+                Verificar Respuesta
+              </button>
+              <div
+                id="feedback-case2-a"
+                class="feedback border-green-500 bg-green-50"
+              >
+                <p class="font-bold text-green-800">¡Correcto!</p>
+                <p>
+                  La presencia de enfermedad de Crohn es el factor decisivo. Los
+                  inhibidores de TNF monoclonales como Adalimumab son eficaces
+                  tanto para la APs como para la enfermedad de Crohn. Los
+                  inhibidores de IL-17 están contraindicados ya que pueden
+                  exacerbarla.
+                </p>
+              </div>
+              <div
+                id="feedback-case2-b"
+                class="feedback border-red-500 bg-red-50"
+              >
+                <p class="font-bold text-red-800">Respuesta Incorrecta.</p>
+                <p>
+                  Los inhibidores de IL-17, aunque eficaces para la APs, están
+                  contraindicados en pacientes con enfermedad inflamatoria
+                  intestinal, ya que pueden empeorar los síntomas
+                  gastrointestinales.
+                </p>
+              </div>
+              <div
+                id="feedback-case2-c"
+                class="feedback border-red-500 bg-red-50"
+              >
+                <p class="font-bold text-red-800">Respuesta Incorrecta.</p>
+                <p>
+                  Aunque Tofacitinib está aprobado para la colitis ulcerosa, su
+                  eficacia en enfermedad de Crohn es menos robusta que la de los
+                  Anti-TNF. Además, por su perfil de seguridad, no sería la
+                  primera elección biológica.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calculadora de Costo -->
+          <div id="Costos" class="tab-content">
+            <h2 class="text-2xl font-bold text-gray-800 mb-1">
+              Calculadora de Costo Anual Estimado
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Este es un modelo simplificado para ilustrar las enormes
+              diferencias de costo entre las terapias. Los precios son
+              ilustrativos y no representan costos reales de mercado.
+            </p>
+            <div class="info-card border-l-yellow-500 max-w-md mx-auto">
+              <label for="therapy-select" class="block font-semibold mb-2"
+                >Seleccione una Terapia:</label
+              >
+              <select
+                id="therapy-select"
+                class="w-full p-2 border border-gray-300 rounded-lg"
+              >
+                <option value="500">Metotrexato</option>
+                <option value="15000">Apremilast</option>
+                <option value="25000">Adalimumab (Biosimilar)</option>
+                <option value="60000">Secukinumab (Anti-IL-17)</option>
+                <option value="65000">Guselkumab (Anti-IL-23)</option>
+                <option value="55000">Tofacitinib (Inhibidor de JAK)</option>
+              </select>
+              <button
+                class="mt-4 w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700"
+                onclick="calculateCost()"
+              >
+                Calcular Costo Anual
+              </button>
+              <div
+                id="cost-result"
+                class="mt-6 text-center text-2xl font-bold text-gray-800"
+              >
+                <!-- El resultado se mostrará aquí -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de Página del Sitio -->
+    <footer class="bg-white mt-8">
+      <div class="container mx-auto px-6 py-6 text-center text-gray-500">
+        <p>&copy; 2024 Powersemiotics. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      // --- LÓGICA DE TABS (PESTAÑAS) ---
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.tab-button').click();
+        lucide.createIcons();
+      });
+
+      function openTab(evt, tabName) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tab-content');
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = 'none';
+        }
+        tablinks = document.getElementsByClassName('tab-button');
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
+        }
+        const tab = document.getElementById(tabName);
+        tab.style.display = 'block';
+        evt.currentTarget.className += ' active';
+
+        if (tabName === 'Nivel3') {
+          renderEfficacyChart();
+        }
+      }
+
+      // --- LÓGICA DEL GRÁFICO ---
+      let efficacyChartInstance = null;
+      function renderEfficacyChart() {
+        const ctx = document.getElementById('efficacyChart');
+        if (!ctx) return;
+        if (efficacyChartInstance) {
+          efficacyChartInstance.destroy();
+        }
+        efficacyChartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: [
+              'Adalimumab (Anti-TNF)',
+              'Secukinumab (Anti-IL17)',
+              'Guselkumab (Anti-IL23)',
+            ],
+            datasets: [
+              {
+                label: '% de Pacientes con Respuesta PASI 90',
+                data: [50, 75, 80],
+                backgroundColor: [
+                  'rgba(96, 165, 250, 0.6)',
+                  'rgba(167, 139, 250, 0.6)',
+                  'rgba(79, 70, 229, 0.6)',
+                ],
+                borderColor: [
+                  'rgba(96, 165, 250, 1)',
+                  'rgba(167, 139, 250, 1)',
+                  'rgba(79, 70, 229, 1)',
+                ],
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100,
+                ticks: { callback: (value) => value + '%' },
+              },
+            },
+            plugins: { legend: { display: false }, title: { display: false } },
+          },
+        });
+      }
+
+      // --- LÓGICA DE CASOS CLÍNICOS ---
+      function checkAnswer(caseId, correctAnswer) {
+        const options = document.querySelectorAll(`input[name="${caseId}"]`);
+        let selectedValue = null;
+        options.forEach((option) => {
+          if (option.checked) {
+            selectedValue = option.value;
+          }
+          document.getElementById(
+            `feedback-${caseId}-${option.value}`,
+          ).style.display = 'none';
+        });
+
+        if (selectedValue) {
+          const feedbackElement = document.getElementById(
+            `feedback-${caseId}-${selectedValue}`,
+          );
+          feedbackElement.style.display = 'block';
+        } else {
+          alert('Por favor, seleccione una respuesta.');
+        }
+      }
+
+      // --- LÓGICA DE CALCULADORA DE COSTO ---
+      function calculateCost() {
+        const select = document.getElementById('therapy-select');
+        const cost = parseInt(select.value, 10);
+        const resultDiv = document.getElementById('cost-result');
+        const formattedCost = new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+          minimumFractionDigits: 0,
+        }).format(cost);
+        resultDiv.innerHTML = `Costo Anual Estimado: <span class="text-blue-600">${formattedCost}</span>`;
+      }
+    </script>
+  </body>
+</html>
